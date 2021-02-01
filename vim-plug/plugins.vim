@@ -8,30 +8,51 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " 修改启动界面
+    Plug 'mhinz/vim-startify'
+
+    " Vista
+    " Plug 'liuchengxu/vista.vim'
+    " See what keys do like in emacs
+    Plug 'liuchengxu/vim-which-key'
+
     " Better Comments
     Plug 'tpope/vim-commentary'
-    Plug 'preservim/nerdcommenter'
-    "Plug 'tomtom/tcomment_vim' " in <space>cn to comment a line
+
     " 文件管理器
     Plug 'kevinhwang91/rnvimr'
+    " Status Line
+    " 需要 nvim5.0以上版本
+    " Plug 'glepnir/galaxyline.nvim'
+
+    " Vim Wiki
+    Plug 'https://github.com/vimwiki/vimwiki.git'
     " 文件目录树
     " Plug 'preservim/nerdtree'
     " Plug 'jistr/vim-nerdtree-tabs'
+    " Swap windows
+    Plug 'wesQ3/vim-windowswap'
 
+    " Rainbow brackets
+    Plug 'luochen1990/rainbow'
 
+    " auto set indent settings
+    " 自动缩进
+    Plug 'tpope/vim-sleuth'
     " --------------------------------------- 主题 -------------------------------
     " 状态行
     Plug 'vim-airline/vim-airline'
     " 状态行主题
     Plug 'vim-airline/vim-airline-themes'
-    " onedark 主题
+    " 主题
     Plug 'ajmwagar/vim-deus'
     Plug 'crusoexia/vim-monokai'
     Plug 'joshdick/onedark.vim'
     Plug 'rakr/vim-one'
 
-    " 修改启动界面
-    Plug 'mhinz/vim-startify'
+    " Icons
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'ryanoasis/vim-devicons'
 
     " 添加代码缩进线
     Plug 'yggdroot/indentline'
@@ -54,7 +75,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
     " 搜索
+    " FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
     Plug 'junegunn/fzf.vim'
+
 
     " 顶栏
     Plug 'mg979/vim-xtabline'
@@ -73,14 +98,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'edkolev/tmuxline.vim'
 
     " Smooth scroll
-    " Plug 'psliwka/vim-smoothie'
+    Plug 'psliwka/vim-smoothie'
 
     " --------------------------------------- 自动补全 -------------------------------
-
 
     " coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+    " Markdown Preview
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
     " Initialize plugin system
 
@@ -88,7 +114,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
     " " Change dates fast
-    "
     " Plug 'tpope/vim-speeddating'
     " " Convert binary, hex, etc..
     " Plug 'glts/vim-radical'
@@ -108,54 +133,29 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'machakann/vim-highlightedyank'
   " else
 
-    " " Easymotion
-    " Plug 'easymotion/vim-easymotion'
     " " Surround
     " Plug 'tpope/vim-surround'
     " " Have the file system follow you around
     " Plug 'airblade/vim-rooter'
-    " " auto set indent settings
-    " Plug 'tpope/vim-sleuth'
     " " Better Syntax Support
     " Plug 'sheerun/vim-polyglot'
     " " Treesitter
     " Plug 'nvim-treesitter/nvim-treesitter'
     " Plug 'nvim-treesitter/playground'
-    " Cool Icons
-    Plug 'kyazdani42/nvim-web-devicons'
-    Plug 'ryanoasis/vim-devicons'
-    " " Auto pairs for '(' '[' '{'
-    " Plug 'jiangmiao/auto-pairs'
     " " Closetags
     " Plug 'alvan/vim-closetag'
-    " " Themes
-    " Plug 'christianchiarulli/nvcode-color-schemes.vim'
-    " " Intellisense
-    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    " " Status Line
-    " Plug 'glepnir/galaxyline.nvim'
-    " Plug 'kevinhwang91/rnvimr'
-    " " FZF
-    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    " Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
-    " Plug 'junegunn/fzf.vim'
     " " Git
     Plug 'airblade/vim-gitgutter'
-    " Plug 'tpope/vim-fugitive'
-    " Plug 'tpope/vim-rhubarb'
-    " Plug 'junegunn/gv.vim'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
     Plug 'rhysd/git-messenger.vim'
     " " Terminal
     Plug 'voldikss/vim-floaterm'
-    " " Start Screen
-    " Plug 'mhinz/vim-startify'
-    " " Vista
-    " Plug 'liuchengxu/vista.vim'
-    " " See what keys do like in emacs
-    Plug 'liuchengxu/vim-which-key'
-    " " Zen mode
-    " Plug 'junegunn/goyo.vim'
-    " " Snippets
+
+
+
+    " Snippets
     " Plug 'honza/vim-snippets'
     " Plug 'mattn/emmet-vim'
     " " Interactive code
@@ -173,10 +173,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " " " async tasks
     " Plug 'skywind3000/asynctasks.vim'
     " Plug 'skywind3000/asyncrun.vim'
-    " " Swap windows
-    " Plug 'wesQ3/vim-windowswap'
-    " " Markdown Preview
-    " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
     " " Easily Create Gists
     " Plug 'mattn/vim-gist'
     " Plug 'mattn/webapi-vim'
@@ -189,8 +185,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'szw/vim-maximizer'
     " " Neovim in Browser
     " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
-    " Rainbow brackets
-    " Plug 'luochen1990/rainbow'
     " Async Linting Engine
     " TODO make sure to add ale config before plugin
     " Plug 'dense-analysis/ale'
@@ -224,18 +218,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'mg979/vim-xtabline'
     " Files
     " Plug 'tpope/vim-eunuch'
-    " Vim Wiki
-    " Plug 'https://github.com/vimwiki/vimwiki.git'
     " Better Comments
     " Plug 'jbgutierrez/vim-better-comments'
     " Echo doc
     " Plug 'Shougo/echodoc.vim'
     " Plug 'hardcoreplayers/spaceline.vim'
-    " Plug 'vim-airline/vim-airline'
-    " Plug 'vim-airline/vim-airline-themes'
     " Ranger
     " Plug 'francoiscabrol/ranger.vim'
-    " Plug 'rbgrouleff/bclose.vim'
     " Making stuff
     " Plug 'neomake/neomake'
     " Plug 'mhinz/vim-signify'

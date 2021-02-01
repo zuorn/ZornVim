@@ -38,9 +38,9 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map['/'] = [ ':call Comment()'                                 , 'comment' ]
+let g:which_key_map[';'] = [ ':call Comment()'                                 , 'Comment' ]
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                                     , 'open init' ]
-let g:which_key_map[';'] = [ ':Commands'                                       , 'commands' ]
+let g:which_key_map['/'] = [ ':Commands'                                       , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                                          , 'balance windows' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+'   , 'explorer' ]
 let g:which_key_map['h'] = [ '<C-W>s'                                          , 'split below']
@@ -326,7 +326,7 @@ let g:which_key_map.l = {
 " t is for terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --wintype=normal --height=6'        , 'terminal'],
+      \ ';' : [':FloatermToggle'                                 , 'terminal'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],

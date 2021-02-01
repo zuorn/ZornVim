@@ -38,6 +38,10 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set guifont=JetBrainsMono\ Nerd\ Font
 
+" 光标停留在上次关闭的位置
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 " New stuff
 " set notimeout nottimeout
 " set scrolloff=1

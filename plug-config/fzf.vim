@@ -1,52 +1,78 @@
-" ===
-" === FZF
-" ===
-" 快捷键	行为
-" Ctrl p	模糊查找文件
-" Ctrl u	向上移动一格
-" Ctrl e	向下移动一格
-" Ctrl w	模糊查找缓冲区
-" Ctrl f	模糊查找文件内容
-" Ctrl h	模糊查找历史文件
-" Ctrl t	模糊查找标签
-"
-set rtp+=/usr/local/opt/fzf
-set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
-set rtp+=/home/david/.linuxbrew/opt/fzf
-"nnoremap <c-p> :Leaderf file<CR>
-" noremap <silent> <C-p> :Files<CR>
-noremap <silent> <C-f> :Rg<CR>
-" noremap <silent> <C-h> :History<CR>
-"noremap <C-t> :BTags<CR>
-" noremap <silent> <C-l> :Lines<CR>
-noremap <silent> <C-w> :Buffers<CR>
-noremap <leader>; :History:<CR>
+" This is the default extra key bindings
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
-let g:fzf_preview_window = 'right:60%'
-let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
+" Enable per-command history.
+" CTRL-N and CTRL-P will be automatically bound to next-history and
+" previous-history instead of down and up. If you don't like the change,
+" explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+let g:fzf_buffers_jump = 1
 
-function! s:list_buffers()
-  redir => list
-  silent ls
-  redir END
-  return split(list, "\n")
+" map <C-f> :Files<CR>
+" map <leader>b :Buffers<CR>
+" nnoremap <leader>g :Rg<CR>
+" nnoremap <leader>t :Tags<CR>
+" nnoremap <leader>m :Marks<CR>
+
+
+let g:fzf_tags_command = 'ctags -R'
+" Border color
+let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+
+let $FZF_DEFAULT_OPTS = '--layout=reverse --inline-info'
+let $FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/**'"
+"-g '!{node_modules,.git}'
+
+" Customize fzf colors to match your color scheme
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+"Get Files
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--inline-info']}), <bang>0)
+
+
+" Get text in files with Rg
+" command! -bang -nargs=* Rg
+"   \ call fzf#vim#grep(
+"   \   "rg --column --line-number --no-heading --color=always --smart-case --glob '!.git/**' ".shellescape(<q-args>), 1,
+
+ " Make Ripgrep ONLY search file contents and not filenames
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --hidden --smart-case --no-heading --color=always '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
+  \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4.. -e'}, 'right:50%', '?'),
+  \   <bang>0)
+
+" Ripgrep advanced
+function! RipgrepFzf(query, fullscreen)
+  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true'
+  let initial_command = printf(command_fmt, shellescape(a:query))
+  let reload_command = printf(command_fmt, '{q}')
+  let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
+  call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
 endfunction
 
-function! s:delete_buffers(lines)
-  execute 'bwipeout' join(map(a:lines, {_, line -> split(line)[0]}))
-endfunction
+command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
-command! BD call fzf#run(fzf#wrap({
-  \ 'source': s:list_buffers(),
-  \ 'sink*': { lines -> s:delete_buffers(lines) },
-  \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept'
-\ }))
-
-
-" fzf 搜索
-noremap <c-\> :BD<CR>
-
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
-
-
-
+" Git grep
+command! -bang -nargs=* GGrep
+  \ call fzf#vim#grep(
+  \   'git grep --line-number '.shellescape(<q-args>), 0,
+  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)

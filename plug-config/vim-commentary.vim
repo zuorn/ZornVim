@@ -1,3 +1,7 @@
+" autocmd FileType apache setlocal commentstring=#\ %s
+" nnoremap <silent> <C-l> :Commentary<CR>
+" vnoremap <silent> <C-l> :Commentary<CR>
+
 function! Comment()
   if (mode() == "n" )
     execute "Commentary"
@@ -5,4 +9,5 @@ function! Comment()
     execute "'<,'>Commentary"
   endif
  endfunction
-vnoremap <silent> <space>/ :call Comment()
+vnoremap <silent> <space>; :call Comment()
+
