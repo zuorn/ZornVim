@@ -10,7 +10,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Comments
     Plug 'tpope/vim-commentary'
-
+    Plug 'preservim/nerdcommenter'
     "Plug 'tomtom/tcomment_vim' " in <space>cn to comment a line
     " 文件管理器
     Plug 'kevinhwang91/rnvimr'

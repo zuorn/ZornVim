@@ -14,9 +14,10 @@ source $HOME/.config/nvim/keys/mappings.vim
 
 
 
-
+" Comment
 source $HOME/.config/nvim/plug-config/vim-commentary.vim
 
+source $HOME/.config/nvim/plug-config/nerdcommenter.vim
 
 source $HOME/.config/nvim/plug-config/floaterm.vim
 
