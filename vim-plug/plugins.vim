@@ -98,7 +98,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'edkolev/tmuxline.vim'
 
     " Smooth scroll
-    Plug 'psliwka/vim-smoothie'
+    " Plug 'psliwka/vim-smoothie'
 
     " --------------------------------------- 自动补全 -------------------------------
 
@@ -160,10 +160,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'mattn/emmet-vim'
     " " Interactive code
     " Plug 'metakirby5/codi.vim'
-    " " Better tabline
+    " Better tabline
+    " 报错(可能需要5.0以上版本)
     " Plug 'romgrk/barbar.nvim'
-    " " undo time travel
-    " Plug 'mbbill/undotree'
+    " undo time travel
+    Plug 'mbbill/undotree'
     " Find and replace
     " Plug 'ChristianChiarulli/far.vim'
     " " Auto change html tags

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/zuorn/.config/nvim'
 let g:netrw_dirhist_3='/Users/zuorn/.config/nvim/plug-config'
 let g:netrw_dirhist_2='/Users/zuorn/.config/nvim'
 let g:netrw_dirhist_1='/Users/zuorn/.config/nvim/vim-plug'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_8='/Users/zuorn/.config/nvim'
 let g:netrw_dirhist_7='/Users/zuorn/vimer/tnvim'
 let g:netrw_dirhist_6='/Users/zuorn/vimer'
 let g:netrw_dirhist_5='/Users/zuorn/.config/nvim'
-let g:netrw_dirhist_4='/Users/zuorn/vimer'
