@@ -28,8 +28,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Vim Wiki
     Plug 'https://github.com/vimwiki/vimwiki.git'
     " 文件目录树
-    " Plug 'preservim/nerdtree'
-    " Plug 'jistr/vim-nerdtree-tabs'
+    Plug 'preservim/nerdtree'
+    Plug 'jistr/vim-nerdtree-tabs'
+    " Plug 'Shougo/vimfiler.vim'
+
     " Swap windows
     Plug 'wesQ3/vim-windowswap'
 

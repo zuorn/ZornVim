@@ -20,6 +20,7 @@ source $HOME/.config/nvim/plug-config/vim-commentary.vim
 
 
 source $HOME/.config/nvim/plug-config/floaterm.vim
+" source $HOME/.config/nvim/plug-config/vimfiler.vim
 
 
 " Themes
