@@ -1,4 +1,4 @@
-" auto-install vim-plug
+" auto
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -10,11 +10,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " 修改启动界面
     Plug 'mhinz/vim-startify'
-
+ 
     " Vista
     " Plug 'liuchengxu/vista.vim'
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
+
 
     " Better Comments
     Plug 'tpope/vim-commentary'
@@ -24,18 +25,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Status Line
     " 需要 nvim5.0以上版本
     " Plug 'glepnir/galaxyline.nvim'
+    " Sneak
+    Plug 'justinmk/vim-sneak'
 
     " Vim Wiki
     Plug 'https://github.com/vimwiki/vimwiki.git'
     " 文件目录树
     Plug 'preservim/nerdtree'
     Plug 'jistr/vim-nerdtree-tabs'
-    " Plug 'Shougo/vimfiler.vim'
 
     " Swap windows
     Plug 'wesQ3/vim-windowswap'
 
     " Rainbow brackets
+    " 彩虹括号
     Plug 'luochen1990/rainbow'
 
     " auto set indent settings
@@ -51,6 +54,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'crusoexia/vim-monokai'
     Plug 'joshdick/onedark.vim'
     Plug 'rakr/vim-one'
+
+    " Colorizer
+    Plug 'norcalli/nvim-colorizer.lua'
 
     " Icons
     Plug 'kyazdani42/nvim-web-devicons'
@@ -96,8 +102,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-scripts/vim-auto-save'
 
     " --------------------------------------- tmux 支持 -------------------------------
-    " Plug 'christoomey/vim-tmux-navigator'
-    " Plug 'edkolev/tmuxline.vim'
 
     " Smooth scroll
     " Plug 'psliwka/vim-smoothie'
@@ -117,16 +121,24 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
 
 
+    " Bullets.vim是一个用于自动项目符号列表的Vim插件。
+    Plug 'dkarter/bullets.vim'
 
-    " Plug 'dkarter/bullets.vim'
+    " undo time travel
+    Plug 'mbbill/undotree'
 
 
+    " " Git
+    Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
+    Plug 'rhysd/git-messenger.vim'
+    " " Terminal
+    Plug 'voldikss/vim-floaterm'
 
 
     " Initialize plugin system
-
-
-
 
     " " Change dates fast
     " Plug 'tpope/vim-speeddating'
@@ -148,9 +160,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'machakann/vim-highlightedyank'
   " else
 
-    " " Surround
+    " Surround
     " Plug 'tpope/vim-surround'
-    " " Have the file system follow you around
+    " Have the file system follow you around
     " Plug 'airblade/vim-rooter'
     " " Better Syntax Support
     " Plug 'sheerun/vim-polyglot'
@@ -161,18 +173,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " " Closetags
     " Plug 'alvan/vim-closetag'
-    " " Git
-    Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
-    Plug 'rhysd/git-messenger.vim'
-    " " Terminal
-    Plug 'voldikss/vim-floaterm'
 
-
-    " undo time travel
-    Plug 'mbbill/undotree'
 
     " Snippets
     " Plug 'honza/vim-snippets'
@@ -181,12 +182,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'metakirby5/codi.vim'
     " Better tabline
     " 报错(可能需要5.0以上版本)
-    Plug 'romgrk/barbar.nvim'
+    " Plug 'romgrk/barbar.nvim'
     " Find and replace
     " Plug 'ChristianChiarulli/far.vim'
     " " Auto change html tags
     " Plug 'AndrewRadev/tagalong.vim'
-    " " live server
+    " live server
     " Plug 'turbio/bracey.vim'
     " " " async tasks
     " Plug 'skywind3000/asynctasks.vim'
@@ -194,8 +195,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " " Easily Create Gists
     " Plug 'mattn/vim-gist'
     " Plug 'mattn/webapi-vim'
-    " " Colorizer
-    " Plug 'norcalli/nvim-colorizer.lua'
     " " Intuitive buffer closing
     " Plug 'moll/vim-bbye'
     " " Debugging
@@ -219,8 +218,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Debug
     " Plug 'mfussenegger/nvim-dap'
     " Plug 'nvim-dap-virtual-text'
-    " Sneak
-    " Plug 'justinmk/vim-sneak'
     " Plug 'nvim-treesitter/nvim-treesitter-refactor'
     " Plug 'nvim-treesitter/nvim-treesitter-textobjects'
     " Plug 'romgrk/nvim-treesitter-context'

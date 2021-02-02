@@ -36,6 +36,8 @@ else
   " I hate escape more than anything else
   inoremap jk <Esc>
   inoremap kj <Esc>
+  vnoremap jk <Esc>
+  vnoremap kj <Esc>
 
   " Easy CAPS
   " inoremap <c-u> <ESC>viwUi

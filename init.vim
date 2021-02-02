@@ -20,7 +20,10 @@ source $HOME/.config/nvim/plug-config/vim-commentary.vim
 
 
 source $HOME/.config/nvim/plug-config/floaterm.vim
-" source $HOME/.config/nvim/plug-config/vimfiler.vim
+
+
+source $HOME/.config/nvim/plug-config/bullets.vim
+" source $HOME/.config/nvim/plug-config/barbar.vim
 
 
 " Themes
@@ -36,6 +39,13 @@ source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/markdown-preview.vim
 source $HOME/.config/nvim/plug-config/vim-wiki.vim
 
+source $HOME/.config/nvim/plug-config/rainbow.vim
+
+source $HOME/.config/nvim/plug-config/sneak.vim
+
+" git 集成
+source $HOME/.config/nvim/plug-config/git-messenger.vim
+source $HOME/.config/nvim/plug-config/gitgutter.vim
 
 " Plug
 source $HOME/.config/nvim/plug-config/vim-auto-save.vim
@@ -48,3 +58,6 @@ source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 source $HOME/.config/nvim/snips/md-snippets.vim
 
 
+" luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+" luafile $HOME/.config/nvim/lua/nvcodeline.lua
+" luafile $HOME/.config/nvim/lua/treesitter.lua
