@@ -107,8 +107,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+    " --------------------------------------- Markdown -------------------------------
     " Markdown Preview
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+
+    " Markdown
+    Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+    Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
+    Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
+
+
+
+    " Plug 'dkarter/bullets.vim'
+
+
+
 
     " Initialize plugin system
 
@@ -141,9 +154,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'airblade/vim-rooter'
     " " Better Syntax Support
     " Plug 'sheerun/vim-polyglot'
+
     " " Treesitter
     " Plug 'nvim-treesitter/nvim-treesitter'
     " Plug 'nvim-treesitter/playground'
+
     " " Closetags
     " Plug 'alvan/vim-closetag'
     " " Git
@@ -156,6 +171,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'voldikss/vim-floaterm'
 
 
+    " undo time travel
+    Plug 'mbbill/undotree'
 
     " Snippets
     " Plug 'honza/vim-snippets'
@@ -164,9 +181,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'metakirby5/codi.vim'
     " Better tabline
     " 报错(可能需要5.0以上版本)
-    " Plug 'romgrk/barbar.nvim'
-    " undo time travel
-    Plug 'mbbill/undotree'
+    Plug 'romgrk/barbar.nvim'
     " Find and replace
     " Plug 'ChristianChiarulli/far.vim'
     " " Auto change html tags

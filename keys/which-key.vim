@@ -1,3 +1,11 @@
+
+" __        ___     _      _           _
+" \ \      / / |__ (_) ___| |__       | | _____ _   _
+"  \ \ /\ / /| '_ \| |/ __| '_ \ _____| |/ / _ \ | | |
+"   \ V  V / | | | | | (__| | | |_____|   <  __/ |_| |
+"    \_/\_/  |_| |_|_|\___|_| |_|     |_|\_\___|\__, |
+"                                               |___/
+
 " Leader Key Maps
 
 let @s = 'veS"'
@@ -38,7 +46,8 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map[';'] = [ ':call Comment()'                                 , 'Comment' ]
+" let g:which_key_map[';'] = [ ':call Comment()'                                 , 'Comment' ]
+let g:which_key_map[';'] = [ ':call Comment()'                                 , '注释' ]
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                                     , 'open init' ]
 let g:which_key_map['/'] = [ ':Commands'                                       , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                                          , 'balance windows' ]
@@ -48,7 +57,7 @@ let g:which_key_map['n'] = [ ':let @/ = ""'                                    ,
 let g:which_key_map['o'] = [ ':RnvimrToggle'                                   , 'open' ]
 let g:which_key_map['p'] = [ ':Files'                                          , 'search files' ]
 let g:which_key_map['q'] = [ '<Plug>(coc-fix-current)'                         , 'quickfix' ]
-let g:which_key_map['T'] = [ ':TSHighlightCapturesUnderCursor'                 , 'treesitter highlight' ]
+" let g:which_key_map['T'] = [ ':TSHighlightCapturesUnderCursor'                 , 'treesitter highlight' ]
 let g:which_key_map['u'] = [ ':UndotreeToggle'                                 , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
@@ -155,35 +164,6 @@ let g:which_key_map.m = {
       " CoC throws an error
       " \ 'a' : [':CocCommand bookmark.annotate', 'annotate bookmark'],
 
-" " s is for search
-" let g:which_key_map.s = {
-"       \ 'name' : '+search' ,
-"       \ '/' : [':History/'              , 'history'],
-"       \ ';' : [':Commands'              , 'commands'],
-"       \ 'a' : [':Ag'                    , 'text Ag'],
-"       \ 'b' : [':BLines'                , 'current buffer'],
-"       \ 'B' : [':Buffers'               , 'open buffers'],
-"       \ 'c' : [':Commits'               , 'commits'],
-"       \ 'C' : [':BCommits'              , 'buffer commits'],
-"       \ 'f' : [':Files'                 , 'files'],
-"       \ 'g' : [':GFiles'                , 'git files'],
-"       \ 'G' : [':GFiles?'               , 'modified git files'],
-"       \ 'h' : [':History'               , 'file history'],
-"       \ 'H' : [':History:'              , 'command history'],
-"       \ 'l' : [':Lines'                 , 'lines'] ,
-"       \ 'm' : [':Marks'                 , 'marks'] ,
-"       \ 'M' : [':Maps'                  , 'normal maps'] ,
-"       \ 'p' : [':Helptags'              , 'help tags'] ,
-"       \ 'P' : [':Tags'                  , 'project tags'],
-"       \ 's' : [':CocList snippets'      , 'snippets'],
-"       \ 'S' : [':Colors'                , 'color schemes'],
-"       \ 't' : [':Rg'                    , 'text Rg'],
-"       \ 'T' : [':BTags'                 , 'buffer tags'],
-"       \ 'w' : [':Windows'               , 'search windows'],
-"       \ 'y' : [':Filetypes'             , 'file types'],
-"       \ 'z' : [':FZF'                   , 'FZF'],
-"       \ }
-      " \ 's' : [':Snippets'     , 'snippets'],
 
 " s is for search
 let g:which_key_map.s = {
