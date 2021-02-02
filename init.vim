@@ -14,6 +14,7 @@ source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/which-key.vim
 
+source $HOME/.config/nvim/plug-config/vista.vim
 
 " Comment
 source $HOME/.config/nvim/plug-config/vim-commentary.vim
