@@ -74,7 +74,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'easymotion/vim-easymotion'
 
     " 翻译
-    Plug 'voldikss/coc-translator'
+    " Plug 'voldikss/coc-translator'
 
 
 
@@ -109,13 +109,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
     " Markdown
-    " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-    " Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
-    " Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
-
-
+    Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+    Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
+    Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
     " Bullets.vim是一个用于自动项目符号列表的Vim插件。
     Plug 'dkarter/bullets.vim'
+
+
+
 
     " undo time travel
     Plug 'mbbill/undotree'
@@ -135,7 +136,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'voldikss/vim-floaterm'
 
     " Interactive code
-    " Plug 'metakirby5/codi.vim'
+    Plug 'metakirby5/codi.vim'
 
     " Surround
     " Plug 'tpope/vim-surround'

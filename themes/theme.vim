@@ -1,7 +1,6 @@
 
 syntax on
 
-" colorscheme one
 colorscheme onedark 
 " colorscheme monokai
 " set background=dark " for the dark version
