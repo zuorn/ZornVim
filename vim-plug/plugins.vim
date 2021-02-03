@@ -16,39 +16,44 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
 
-
-    " Better Comments
+    " 注释
     Plug 'tpope/vim-commentary'
 
     " 文件管理器
     Plug 'kevinhwang91/rnvimr'
-    " Status Line
-    " 需要 nvim5.0以上版本
-    " Plug 'glepnir/galaxyline.nvim'
+
     " Sneak
     Plug 'justinmk/vim-sneak'
 
     " Vim Wiki
     Plug 'https://github.com/vimwiki/vimwiki.git'
-    " 文件目录树
-    Plug 'preservim/nerdtree'
-    Plug 'jistr/vim-nerdtree-tabs'
 
-    " Swap windows
-    Plug 'wesQ3/vim-windowswap'
+    " 文件目录树
+    " Plug 'preservim/nerdtree'
+    " Plug 'jistr/vim-nerdtree-tabs'
 
     " Rainbow brackets
     " 彩虹括号
     Plug 'luochen1990/rainbow'
 
-    " auto set indent settings
     " 自动缩进
     Plug 'tpope/vim-sleuth'
+
+    " 添加代码缩进
+    Plug 'yggdroot/indentline'
+
+    " 自动补全双括号等
+    Plug 'jiangmiao/auto-pairs'
+
     " --------------------------------------- 主题 -------------------------------
     " 状态行
     Plug 'vim-airline/vim-airline'
     " 状态行主题
     Plug 'vim-airline/vim-airline-themes'
+
+    " 顶栏
+    Plug 'mg979/vim-xtabline'
+
     " 主题
     Plug 'ajmwagar/vim-deus'
     Plug 'crusoexia/vim-monokai'
@@ -62,21 +67,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'ryanoasis/vim-devicons'
 
-    " 添加代码缩进线
-    Plug 'yggdroot/indentline'
-
-    " 自动补全双括号等
-    Plug 'jiangmiao/auto-pairs'
 
 
     " vim 语言包
     Plug 'sheerun/vim-polyglot'
+
     " 按 ' 键和一个 字母 跳转至 字母
     " 快速跳转
     Plug 'easymotion/vim-easymotion'
 
-    " 查找与替换
-    Plug 'brooth/far.vim'
     " 翻译
     Plug 'voldikss/coc-translator'
 
@@ -88,9 +87,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
     Plug 'junegunn/fzf.vim'
 
+    " 查找与替换
+    Plug 'brooth/far.vim'
 
-    " 顶栏
-    Plug 'mg979/vim-xtabline'
 
     " Zen 模式
     Plug 'junegunn/goyo.vim'
@@ -101,7 +100,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 自动保存
     Plug 'vim-scripts/vim-auto-save'
 
-    " --------------------------------------- tmux 支持 -------------------------------
 
     " Smooth scroll
     " Plug 'psliwka/vim-smoothie'
@@ -127,15 +125,48 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " undo time travel
     Plug 'mbbill/undotree'
 
+    " Swap windows
+    Plug 'wesQ3/vim-windowswap'
 
-    " " Git
+
+    " Git
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
     Plug 'rhysd/git-messenger.vim'
-    " " Terminal
+
+    " Terminal
     Plug 'voldikss/vim-floaterm'
+
+    " " Interactive code
+    " Plug 'metakirby5/codi.vim'
+
+    " Surround
+    " Plug 'tpope/vim-surround'
+    " Have the file system follow you around
+    " Plug 'airblade/vim-rooter'
+    " " Better Syntax Support
+    " Plug 'sheerun/vim-polyglot'
+
+    " " Treesitter
+    " Plug 'nvim-treesitter/nvim-treesitter'
+    " Plug 'nvim-treesitter/playground'
+
+    " Snippets
+    " Plug 'honza/vim-snippets'
+    " Plug 'mattn/emmet-vim'
+
+
+
+
+
+
+
+
+
+
+
 
 
     " Initialize plugin system
@@ -160,26 +191,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'machakann/vim-highlightedyank'
   " else
 
-    " Surround
-    " Plug 'tpope/vim-surround'
-    " Have the file system follow you around
-    " Plug 'airblade/vim-rooter'
-    " " Better Syntax Support
-    " Plug 'sheerun/vim-polyglot'
-
-    " " Treesitter
-    " Plug 'nvim-treesitter/nvim-treesitter'
-    " Plug 'nvim-treesitter/playground'
-
     " " Closetags
     " Plug 'alvan/vim-closetag'
 
 
-    " Snippets
-    " Plug 'honza/vim-snippets'
-    " Plug 'mattn/emmet-vim'
-    " " Interactive code
-    " Plug 'metakirby5/codi.vim'
     " Better tabline
     " 报错(可能需要5.0以上版本)
     " Plug 'romgrk/barbar.nvim'
