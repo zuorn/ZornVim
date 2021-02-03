@@ -28,10 +28,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Vim Wiki
     Plug 'https://github.com/vimwiki/vimwiki.git'
 
-    " 文件目录树
-    " Plug 'preservim/nerdtree'
-    " Plug 'jistr/vim-nerdtree-tabs'
-
     " Rainbow brackets
     " 彩虹括号
     Plug 'luochen1990/rainbow'
@@ -55,10 +51,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mg979/vim-xtabline'
 
     " 主题
-    Plug 'ajmwagar/vim-deus'
+    " 看文档 
+    Plug 'ajmwagar/vim-deus'  
     Plug 'crusoexia/vim-monokai'
     Plug 'joshdick/onedark.vim'
-    Plug 'rakr/vim-one'
+    " Plug 'rakr/vim-one'
 
     " Colorizer
     Plug 'norcalli/nvim-colorizer.lua'
@@ -101,8 +98,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-scripts/vim-auto-save'
 
 
-    " Smooth scroll
-    " Plug 'psliwka/vim-smoothie'
 
     " --------------------------------------- 自动补全 -------------------------------
 
@@ -114,9 +109,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
     " Markdown
-    Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-    Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
-    Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
+    " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+    " Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
+    " Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
 
 
     " Bullets.vim是一个用于自动项目符号列表的Vim插件。
@@ -139,7 +134,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Terminal
     Plug 'voldikss/vim-floaterm'
 
-    " " Interactive code
+    " Interactive code
     " Plug 'metakirby5/codi.vim'
 
     " Surround
@@ -149,122 +144,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " " Better Syntax Support
     " Plug 'sheerun/vim-polyglot'
 
-    " " Treesitter
+    " Treesitter
     " Plug 'nvim-treesitter/nvim-treesitter'
     " Plug 'nvim-treesitter/playground'
 
     " Snippets
-    " Plug 'honza/vim-snippets'
+    Plug 'honza/vim-snippets'
     " Plug 'mattn/emmet-vim'
 
 
-
-
-
-
-
-
-
-
-
-
-
-    " Initialize plugin system
-
-    " " Change dates fast
-    " Plug 'tpope/vim-speeddating'
-    " " Convert binary, hex, etc..
-    " Plug 'glts/vim-radical'
-    " " Repeat stuff
-    " Plug 'tpope/vim-repeat'
-    " " Text Navigation
-    " Plug 'unblevable/quick-scope'
-    " " Useful for React Commenting
-    " Plug 'suy/vim-context-commentstring'
-    " " highlight all matches under cursor
-    " " Plug 'RRethy/vim-illuminate'
-
-  " if exists('g:vscode')
-    " Easy motion for VSCode
-    " Plug 'asvetliakov/vim-easymotion'
-    " Plug 'ChristianChiarulli/vscode-easymotion'
-    " Plug 'machakann/vim-highlightedyank'
-  " else
-
-    " " Closetags
-    " Plug 'alvan/vim-closetag'
-
-
-    " Better tabline
-    " 报错(可能需要5.0以上版本)
-    " Plug 'romgrk/barbar.nvim'
-    " Find and replace
-    " Plug 'ChristianChiarulli/far.vim'
-    " " Auto change html tags
-    " Plug 'AndrewRadev/tagalong.vim'
-    " live server
-    " Plug 'turbio/bracey.vim'
-    " " " async tasks
-    " Plug 'skywind3000/asynctasks.vim'
-    " Plug 'skywind3000/asyncrun.vim'
-    " " Easily Create Gists
-    " Plug 'mattn/vim-gist'
-    " Plug 'mattn/webapi-vim'
-    " " Intuitive buffer closing
-    " Plug 'moll/vim-bbye'
-    " " Debugging
-    " Plug 'puremourning/vimspector'
-    " Plug 'szw/vim-maximizer'
-    " " Neovim in Browser
-    " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
-    " Async Linting Engine
-    " TODO make sure to add ale config before plugin
-    " Plug 'dense-analysis/ale'
-    " Better Whitespace
-    " Plug 'ntpeters/vim-better-whitespace'
-    " Multiple Cursors
-    " TODO add this back in change from C-n
-    " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-    " Plug 'yuezk/vim-js'
-    " Plug 'maxmellon/vim-jsx-pretty'
-    " Plug 'jelera/vim-javascript-syntax'
-    " Plugin Graveyard
-
-    " Debug
-    " Plug 'mfussenegger/nvim-dap'
-    " Plug 'nvim-dap-virtual-text'
-    " Plug 'nvim-treesitter/nvim-treesitter-refactor'
-    " Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-    " Plug 'romgrk/nvim-treesitter-context'
-    " Minimap
-    " Plug 'wfxr/minimap.vim'
-    " jsx syntax support
-    " Typescript syntax
-    " Plug 'HerringtonDarkholme/yats.vim'
-    " Multiple Cursors
-    " Plug 'terryma/vim-multiple-cursors'
-    " Plug 'kaicataldo/material.vim'
-    " Plug 'tomasiser/vim-code-dark'
-    " Plug 'mg979/vim-xtabline'
-    " Files
-    " Plug 'tpope/vim-eunuch'
-    " Better Comments
-    " Plug 'jbgutierrez/vim-better-comments'
-    " Echo doc
-    " Plug 'Shougo/echodoc.vim'
-    " Plug 'hardcoreplayers/spaceline.vim'
-    " Ranger
-    " Plug 'francoiscabrol/ranger.vim'
-    " Making stuff
-    " Plug 'neomake/neomake'
-    " Plug 'mhinz/vim-signify'
-    " Plug 'preservim/nerdcommenter'
-    " Plug 'brooth/far.vim'
-    " Plug 'atishay/far.vim'
-    " Plug 'romgrk/lib.kom'
-    " Plug 'brooth/far.vim'
-    " Debugging
-  " endif
+    " Smooth scroll
+    " Plug 'psliwka/vim-smoothie'
 
 call plug#end()
 

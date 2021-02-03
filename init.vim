@@ -1,9 +1,11 @@
-" _____             __     ___
-" |__  /___  _ __ _ _\ \   / (_)_ __ ___
-"   / // _ \| '__| '_ \ \ / /| | '_ ` _ \
-"  / /| (_) | |  | | | \ V / | | | | | | |
-" /____\___/|_|  |_| |_|\_/  |_|_| |_| |_|
-"
+
+
+" |_ _|_ __ (_) |\ \   / (_)_ __ ___
+"  | || '_ \| | __\ \ / /| | '_ ` _ \
+"  | || | | | | |_ \ V / | | | | | | |
+" |___|_| |_|_|\__| \_/  |_|_| |_| |_|
+
+
 
 
 " General Settings
@@ -56,9 +58,8 @@ source $HOME/.config/nvim/plug-config/coc/coc.vim
 source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 
 " MarkDown
-source $HOME/.config/nvim/snips/md-snippets.vim
+" source $HOME/.config/nvim/snips/md-snippets.vim
 
 
 " luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-" luafile $HOME/.config/nvim/lua/nvcodeline.lua
 " luafile $HOME/.config/nvim/lua/treesitter.lua

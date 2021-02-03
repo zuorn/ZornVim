@@ -110,6 +110,16 @@ let g:which_key_map.b = {
       \ '?' : ['Buffers'                , 'fzf-buffer'],
       \ }
 
+" translator
+let g:which_key_map.c = {
+      \ 'name' : '+translator' ,
+      \ 'c' : [':CocCommand translator.popup [text]'                   , '浮动显示翻译结果'],
+      \ 'v' : [':CocCommand translator.replace [text]'                  , '替换翻译结果'],
+      \ 'w' : [':'        , 'strip whitespace'],
+      \ }
+
+
+
 " d is for debug
 let g:which_key_map.d = {
       \ 'name' : '+debug' ,

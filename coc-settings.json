@@ -1,7 +1,6 @@
 {
   // suggestions
   // "suggest.echodocSupport": true,
-  // TODO add more labels and give them cool glyphs
   "suggest.completionItemKindLabels": {
     "text": "t",
     "method": "m",
@@ -38,11 +37,12 @@
     "css",
     "markdown",
     "javascript",
-    "graphql",
     "html",
     "yaml",
     "json",
     "python",
+    "lua",
+    "shell",
     "java"
   ],
   "coc.preferences.hoverTarget": "float",
@@ -98,8 +98,8 @@
   "explorer.width": 30,
   "explorer.file.root.template": "[icon] [git] [hidden & 1][root]",
   "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
-  "explorer.icon.enableVimDevicons": false,
+  "explorer.previewAction.onHover": true,
+  "explorer.icon.enableVimDevicons": true,
   "explorer.file.showHiddenFiles": false,
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
@@ -114,21 +114,12 @@
     }
   },
 
+
+
   "bookmark.sign": "",
 
   //coc-emoji
   "coc.source.emoji.filetypes": ["markdown"]
 
-  // lua
-  //"lua.useSumnekoLs": true,
-  //"lua.commandPath": "/home/chris/.luambenvs/neovim3/bin/lua-lsp"
-  //"lua.enable": true,
-  //"Lua.completion.enable": true,
-  //"Lua.runtime.version": "Lua 5.1",
-  //"Lua.runtime.path": ["?.lua", "?/init.lua", "?/?.lua"],
-  //"lua.version": "5.1"
-  //"lua.commandPath": "/home/chris/.vscode-insiders/extensions/sumneko.lua-1.0.5/server/bin/Linux/lua-language-server"
 
-  // TODO b:coc_suggest_disable=1 GOYO
-  // TODO add to paths.vim g:coc_node_path
 }
