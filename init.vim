@@ -1,10 +1,12 @@
 
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
 " |_ _|_ __ (_) |\ \   / (_)_ __ ___
 "  | || '_ \| | __\ \ / /| | '_ ` _ \
 "  | || | | | | |_ \ V / | | | | | | |
 " |___|_| |_|_|\__| \_/  |_|_| |_| |_|
-
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -20,6 +22,8 @@ source $HOME/.config/nvim/themes/theme.vim
 source $HOME/.config/nvim/plug-config/vim-airline.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/xtabline.vim
+source $HOME/.config/nvim/plug-config/dashboard.vim
+source $HOME/.config/nvim/plug-config/startify.vim
 
 
 " plugins 

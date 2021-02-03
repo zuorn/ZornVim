@@ -10,6 +10,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " 修改启动界面
     Plug 'mhinz/vim-startify'
+    Plug 'glepnir/dashboard-nvim'
+
  
     " Vista
     Plug 'liuchengxu/vista.vim'
@@ -24,6 +26,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Sneak
     Plug 'justinmk/vim-sneak'
+
+    " Intuitive buffer closing
+    Plug 'moll/vim-bbye'
 
     " Vim Wiki
     Plug 'https://github.com/vimwiki/vimwiki.git'

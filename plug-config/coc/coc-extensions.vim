@@ -20,6 +20,7 @@ let g:coc_global_extensions = [
   \ 'coc-xml',
   \ 'coc-yank',
   \ 'coc-json',
+  \ 'coc-lua',
   \ 'coc-marketplace',
   \ 'coc-markdownlint',
   \ 'coc-sql',
