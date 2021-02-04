@@ -9,8 +9,11 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " 修改启动界面
-    Plug 'mhinz/vim-startify'
-    Plug 'glepnir/dashboard-nvim'
+    " Plug 'glepnir/dashboard-nvim'
+    Plug 'zuorn/vim-startify'
+
+
+    Plug 'yianwillis/vimcdoc'
 
  
     " Vista
@@ -47,10 +50,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
 
     " --------------------------------------- 主题 -------------------------------
-    " 状态行
-    Plug 'vim-airline/vim-airline'
-    " 状态行主题
-    Plug 'vim-airline/vim-airline-themes'
+    " " 状态行
+    " Plug 'vim-airline/vim-airline'
+    " " 状态行主题
+    " Plug 'vim-airline/vim-airline-themes'
+
+    Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+
+    " If you want to display icons, then use one of these plugins:
+    Plug 'kyazdani42/nvim-web-devicons' " lua
+    Plug 'ryanoasis/vim-devicons' " vimscript
+
 
     " 顶栏
     Plug 'mg979/vim-xtabline'
@@ -64,11 +74,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Colorizer
     Plug 'norcalli/nvim-colorizer.lua'
-
-    " Icons
-    Plug 'kyazdani42/nvim-web-devicons'
-    Plug 'ryanoasis/vim-devicons'
-
 
 
     " vim 语言包

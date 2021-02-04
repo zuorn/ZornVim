@@ -39,6 +39,11 @@ else
   vnoremap jk <Esc>
   vnoremap kj <Esc>
 
+  inoremap <expr> <c-j> ("\<C-n>")
+  cnoremap <expr> <c-k> ("\<C-p>")
+  cnoremap <expr> <c-j> ("\<C-n>")
+  inoremap <expr> <c-k> ("\<C-p>")
+
   " Easy CAPS
   " inoremap <c-u> <ESC>viwUi
   " nnoremap <c-u> viwU<Esc>
@@ -59,8 +64,10 @@ else
   noremap <Enter> :w<CR>
   " Alternate way to quit
   nnoremap <silent> <C-Q> :wq!<CR>
-  nnoremap <silent> q :q<CR>
-  nnoremap <silent> Q :q<CR>
+  " nnoremap <silent> q :q<CR>
+  nnoremap <silent> q :Bdelete<CR>
+  nnoremap <silent> Q :q!<CR>
+
   " Use control-c instead of escape
   nnoremap <silent> <C-c> <Esc>
   " <TAB>: completion.

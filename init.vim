@@ -24,6 +24,7 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/xtabline.vim
 source $HOME/.config/nvim/plug-config/dashboard.vim
 source $HOME/.config/nvim/plug-config/startify.vim
+source $HOME/.config/nvim/plug-config/galaxyline.vim
 
 
 " plugins 
@@ -71,7 +72,6 @@ source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 
 " luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " luafile $HOME/.config/nvim/lua/treesitter.lua
+  " luafile $HOME/.config/nvim/lua/statusline.lua
 
 
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")

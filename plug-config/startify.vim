@@ -1,2 +1,2 @@
 
-let g:indentLine_fileTypeExclude = ['vim-startify']
+let g:indentLine_fileTypeExclude = ['startify']
