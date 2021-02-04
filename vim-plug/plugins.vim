@@ -9,8 +9,7 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " 修改启动界面
-    " Plug 'glepnir/dashboard-nvim'
-    Plug 'zuorn/vim-startify'
+    Plug 'mhinz/vim-startify'
 
 
     Plug 'yianwillis/vimcdoc'
@@ -18,14 +17,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
  
     " Vista
     Plug 'liuchengxu/vista.vim'
-    " See what keys do like in emacs
+    " which key
     Plug 'liuchengxu/vim-which-key'
 
     " 注释
     Plug 'tpope/vim-commentary'
 
     " 文件管理器
-    Plug 'kevinhwang91/rnvimr'
+    " Plug 'kevinhwang91/rnvimr'
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
     " Sneak
     Plug 'justinmk/vim-sneak'
@@ -38,7 +38,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Rainbow brackets
     " 彩虹括号
-    Plug 'luochen1990/rainbow'
+    " Plug 'luochen1990/rainbow'
+    Plug 'junegunn/rainbow_parentheses.vim'
 
     " 自动缩进
     Plug 'tpope/vim-sleuth'
@@ -50,12 +51,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
 
     " --------------------------------------- 主题 -------------------------------
-    " " 状态行
-    " Plug 'vim-airline/vim-airline'
-    " " 状态行主题
-    " Plug 'vim-airline/vim-airline-themes'
+    " 状态行
+    Plug 'vim-airline/vim-airline'
+    " 状态行主题
+    Plug 'vim-airline/vim-airline-themes'
 
-    Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+    " Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 
     " If you want to display icons, then use one of these plugins:
     Plug 'kyazdani42/nvim-web-devicons' " lua
@@ -163,9 +164,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'honza/vim-snippets'
     " Plug 'mattn/emmet-vim'
 
-
-    " Smooth scroll
-    " Plug 'psliwka/vim-smoothie'
 
 call plug#end()
 

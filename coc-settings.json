@@ -74,9 +74,6 @@
   "python.linting.pydocstyleEnabled": false,
   "python.linting.pylamaEnabled": false,
   "python.linting.pylintEnabled": false,
-  "pyright.disableCompletion": false,
-  "pyright.disableLanguageServices": false,
-  "pyright.disableOrganizeImports": false,
 
   // snippets
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
@@ -108,7 +105,7 @@
 
   "languageserver": {
     "lua": {
-      "command": "/home/chris/.luambenvs/neovim4/bin/lua-lsp",
+      "command": "/usr/local/bin/lua",
       "filetypes": ["lua"],
       "trace.server": "verbose"
     }
@@ -116,7 +113,5 @@
 
   "bookmark.sign": "",
 
-  //coc-emoji
-  "coc.source.emoji.filetypes": ["markdown"]
 
 }

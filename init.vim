@@ -1,12 +1,10 @@
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " |_ _|_ __ (_) |\ \   / (_)_ __ ___
 "  | || '_ \| | __\ \ / /| | '_ ` _ \
 "  | || | | | | |_ \ V / | | | | | | |
 " |___|_| |_|_|\__| \_/  |_|_| |_| |_|
 "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -19,7 +17,8 @@ source $HOME/.config/nvim/general/settings.vim
 
 " Themes
 source $HOME/.config/nvim/themes/theme.vim
-source $HOME/.config/nvim/plug-config/vim-airline.vim
+" source $HOME/.config/nvim/plug-config/vim-airline.vim
+source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/xtabline.vim
 source $HOME/.config/nvim/plug-config/dashboard.vim
@@ -61,7 +60,7 @@ source $HOME/.config/nvim/plug-config/git-messenger.vim
 source $HOME/.config/nvim/plug-config/gitgutter.vim
 
 source $HOME/.config/nvim/plug-config/vim-auto-save.vim
-" source $HOME/.config/nvim/plug-config/accelerated-jk.vim
+source $HOME/.config/nvim/plug-config/accelerated-jk.vim
 
 " 自动补全
 source $HOME/.config/nvim/plug-config/coc/coc.vim
@@ -72,6 +71,6 @@ source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 
 " luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " luafile $HOME/.config/nvim/lua/treesitter.lua
-  " luafile $HOME/.config/nvim/lua/statusline.lua
-
+" luafile $HOME/.config/nvim/lua/statusline.lua
+" lua require'plug-colorizer'
 
