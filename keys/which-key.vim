@@ -73,8 +73,15 @@ let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               ,
 let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
 
 
-
 " Group mappings
+
+" 1 is translator
+let g:which_key_map.1 = {
+     \ 'name' : '+translator' ,
+     \ '1' : ['<Plug>(coc-translator-pv)' ,'popup'],
+     \ '2' : ['<Plug>(coc-translator-ev)' ,'echo'],
+     \ '3' : ['<Plug>(coc-translator-rv)' ,'replace'],
+     \}
 
 " a is for actions
 let g:which_key_map.a = {
