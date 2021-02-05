@@ -19,9 +19,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vista.vim'
     " which key
     Plug 'liuchengxu/vim-which-key'
+    " On-demand lazy load
+    " Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+
+    " To register the descriptions when using the on-demand load feature,
+    " use the autocmd hook to call which_key#register(), e.g., register for the Space key:
+    " autocmd! User vim-which-key call which_key#register('<Space>', 'g:which_key_map')
+
 
     " 注释
-    Plug 'tpope/vim-commentary'
+    Plug 'preservim/nerdcommenter'
 
     " 文件管理器
     " Plug 'kevinhwang91/rnvimr'
@@ -150,11 +157,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'metakirby5/codi.vim'
 
     " Surround
-    " Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-surround'
     " Have the file system follow you around
-    " Plug 'airblade/vim-rooter'
-    " " Better Syntax Support
-    " Plug 'sheerun/vim-polyglot'
+    Plug 'airblade/vim-rooter'
 
     " Treesitter
     " Plug 'nvim-treesitter/nvim-treesitter'

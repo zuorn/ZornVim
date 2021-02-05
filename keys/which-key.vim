@@ -19,11 +19,21 @@ let g:which_key_display_names = {'<CR>': '↵', '<TAB>': '⇆'}
 nnoremap <silent> <leader> :silent <c-u> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 
+
+
+nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
+
+" Map localleader to which_key
+nnoremap <localleader> :<c-u>WhichKey  ';'<CR>
+vnoremap <localleader> :<c-u>WhichKeyVisual  ';'<CR>
+
 " Create map to add keys to
 let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
-" set timeoutlen=100
+" By default timeoutlen is 1000 ms
+set timeoutlen=500
+
 
 " Coc Search & refactor
 nnoremap <leader>? CocSearch <C-R>=expand("<cword>")<CR><CR>
@@ -46,7 +56,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map[';'] = [ ':call Comment()'                                 , 'Comment' ]
+let g:which_key_map[';'] = [ '<plug>NERDCommenterInvert'                                 , 'Comment' ]
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                                     , 'open init' ]
 let g:which_key_map['/'] = [ ':Commands'                                       , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                                          , 'balance windows' ]
@@ -61,6 +71,7 @@ let g:which_key_map['u'] = [ ':UndotreeToggle'                                 ,
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
 let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
+let g:which_key_map['b'] = [ 'Buffers'                                            , 'fzf-buffer' ]
 
 
 
@@ -86,40 +97,48 @@ let g:which_key_map.a = {
       \ }
 
 " b is for buffer
-let g:which_key_map.b = {
-      \ 'name' : '+buffer' ,
-      \ '>' : [':BufferMoveNext'        , 'move next'],
-      \ '<' : [':BufferMovePrevious'    , 'move prev'],
-      \ '1' : [':BufferGoto 1'          , 'buffer 1'],
-      \ '2' : [':BufferGoto 2'          , 'buffer 2'],
-      \ '3' : [':BufferGoto 3'          , 'buffer 3'],
-      \ '4' : [':BufferGoto 4'          , 'buffer 4'],
-      \ '5' : [':BufferGoto 5'          , 'buffer 5'],
-      \ '6' : [':BufferGoto 6'          , 'buffer 6'],
-      \ '7' : [':BufferGoto 7'          , 'buffer 7'],
-      \ '8' : [':BufferGoto 8'          , 'buffer 8'],
-      \ '9' : [':BufferGoto 9'          , 'buffer 9'],
-      \ '0' : [':BufferGoto 0'          , 'buffer 0'],
-      \ 'b' : [':BufferPick'            , 'pick buffer'],
-      \ 'd' : [':Bdelete'               , 'delete-buffer'],
-      \ 'D' : [':BufferOrderByDirectory', 'order by directory'],
-      \ 'f' : ['bfirst'                 , 'first-buffer'],
-      \ 'l' : ['blast'                  , 'last buffer'],
-      \ 'L' : [':BufferOrderByLanguage' , 'order by language'],
-      \ 'n' : ['bnext'                  , 'next-buffer'],
-      \ 'p' : ['bprevious'              , 'previous-buffer'],
-      \ '?' : ['Buffers'                , 'fzf-buffer'],
-      \ }
+" let g:which_key_map.b = {
+"       \ 'name' : '+buffer' ,
+"       \ '>' : [':BufferMoveNext'        , 'move next'],
+"       \ '<' : [':BufferMovePrevious'    , 'move prev'],
+"       \ '1' : [':BufferGoto 1'          , 'buffer 1'],
+"       \ '2' : [':BufferGoto 2'          , 'buffer 2'],
+"       \ '3' : [':BufferGoto 3'          , 'buffer 3'],
+"       \ '4' : [':BufferGoto 4'          , 'buffer 4'],
+"       \ '5' : [':BufferGoto 5'          , 'buffer 5'],
+"       \ '6' : [':BufferGoto 6'          , 'buffer 6'],
+"       \ '7' : [':BufferGoto 7'          , 'buffer 7'],
+"       \ '8' : [':BufferGoto 8'          , 'buffer 8'],
+"       \ '9' : [':BufferGoto 9'          , 'buffer 9'],
+"       \ '0' : [':BufferGoto 0'          , 'buffer 0'],
+"       " \ 'b' : [':BufferPick'            , 'pick buffer'],
+"       \ 'd' : [':Bdelete'               , 'delete-buffer'],
+"       \ 'D' : [':BufferOrderByDirectory', 'order by directory'],
+"       \ 'f' : ['bfirst'                 , 'first-buffer'],
+"       \ 'l' : ['blast'                  , 'last buffer'],
+"       \ 'b' : ['Buffers'                , 'fzf-buffer'],
+"       \ }
 
-" translator
+" nnoremap <silent> <leader>c} V}:call NERDComment('x', 'toggle')<CR>
+" nnoremap <silent> <leader>c{ V{:call NERDComment('x', 'toggle')<CR>
+
+" c is for Comment
 let g:which_key_map.c = {
-      \ 'name' : '+translator' ,
-      \ 'c' : [':CocCommand translator.popup [text]'                   , '浮动显示翻译结果'],
-      \ 'v' : [':CocCommand translator.replace [text]'                  , '替换翻译结果'],
-      \ 'w' : [':'        , 'strip whitespace'],
-      \ }
-
-
+      \ 'name' : '+Comment' ,
+      \ 'c' : ['<plug>NERDCommenterComment'              , 'CommenterComment'],
+      \ 'n' : ['<plug>NERDCommenterNested'                  ,'CommenterNested'],
+      \ '<space>':['<plug>NERDCommenterToggle',             'CommenterToggle'],
+      \ 'm':['<plug>NERDCommenterMinimal',                  'CommenterMinimal'],
+      \ 'i':['<plug>NERDCommenterInvert',                   'CommenterInvert'],
+      \ 's':['<plug>NERDCommenterSexy',                           'CommenterSexy'],
+      \ 'y':['<plug>NERDCommenterYank',                           'CommenterYank'],
+      \ '$':['<plug>NERDCommenterToEOL',                          'CommenterToEOL'],
+      \ 'A':['<plug>NERDCommenterAppend',                         'CommenterAppend'],
+      \ 'a':['<plug>NERDCommenterAltDelims',                      'CommenterAltDelims'],
+      \ 'l':['<plug>NERDCommenterAlignLeft',                      'CommenterAlignLeft'],
+      \ 'b':['<plug>NERDCommenterAlignBoth',                      'CommenterAlignBoth'],
+      \ 'u':['<plug>NERDCommenterUncomment',                      'CommenterUncomment'],
+      \}
 
 " d is for debug
 let g:which_key_map.d = {

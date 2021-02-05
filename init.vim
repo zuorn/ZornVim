@@ -32,8 +32,10 @@ source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/vista.vim
 
 " Comment
-source $HOME/.config/nvim/plug-config/vim-commentary.vim
+source $HOME/.config/nvim/plug-config/nerdcommenter.vim
 
+
+source $HOME/.config/nvim/plug-config/rooter.vim
 
 source $HOME/.config/nvim/plug-config/floaterm.vim
 

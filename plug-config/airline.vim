@@ -1,3 +1,11 @@
+       " _      _ _
+  " __ _(_)_ __| (_)_ __   ___
+ " / _` | | '__| | | '_ \ / _ \
+" | (_| | | |  | | | | | |  __/
+ " \__,_|_|_|  |_|_|_| |_|\___|
+
+
+
 " enable tabline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''

@@ -14,7 +14,7 @@ imap <C-l> <C-w>l
 
 " g Leader key
 let mapleader=" "
-" let localleader=" "
+let localleader=";"
 " nnoremap <Space> <Nop>
 
 " Better indenting
