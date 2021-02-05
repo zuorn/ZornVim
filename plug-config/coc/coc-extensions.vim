@@ -21,11 +21,11 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-lua',
   \ 'coc-marketplace',
-  \ 'coc-markdownlint',
   \ 'coc-sql',
   \ 'coc-translator',
   \ ]
   " \ 'coc-tabnine',
   " \ 'coc-highlight',
   " \ 'coc-bookmark',
+  " \ 'coc-markdownlint',
 

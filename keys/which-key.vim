@@ -139,7 +139,7 @@ let g:which_key_map.b = {
       \ 'g' : [':sbr'                , '分割窗口到第一个缓冲区'],
       \ 'v' : [''                , '分割窗口到第一个缓冲区'],
       \ }
-"
+
 " nnoremap <silent> <leader>c} V}:call NERDComment('x', 'toggle')<CR>
 " nnoremap <silent> <leader>c{ V{:call NERDComment('x', 'toggle')<CR>
 
