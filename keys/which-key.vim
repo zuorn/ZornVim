@@ -81,7 +81,22 @@ let g:which_key_map.1 = {
      \ '1' : ['<Plug>(coc-translator-pv)' ,'popup'],
      \ '2' : ['<Plug>(coc-translator-ev)' ,'echo'],
      \ '3' : ['<Plug>(coc-translator-rv)' ,'replace'],
+     \ '4' : [':CocList translation' ,'translation list'],
      \}
+
+
+
+" " NOTE: do NOT use `nore` mappings
+" " popup
+" nmap <Leader>t <Plug>(coc-translator-p)
+" vmap <Leader>t <Plug>(coc-translator-pv)
+" " echo
+" nmap <Leader>e <Plug>(coc-translator-e)
+" vmap <Leader>e <Plug>(coc-translator-ev)
+" " replace
+" nmap <Leader>r <Plug>(coc-translator-r)
+" vmap <Leader>r <Plug>(coc-translator-rv)
+
 
 " a is for actions
 let g:which_key_map.a = {
