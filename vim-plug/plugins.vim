@@ -8,6 +8,8 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " debug
+    Plug 'puremourning/vimspector'
     " 修改启动界面
     Plug 'mhinz/vim-startify'
     " vim 中文帮助文档

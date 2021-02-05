@@ -20,6 +20,7 @@ source $HOME/.config/nvim/themes/theme.vim
 " source $HOME/.config/nvim/plug-config/airline.vim
 " source $HOME/.config/nvim/plug-config/dashboard.vim
 
+source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/xtabline.vim
 source $HOME/.config/nvim/plug-config/startify.vim
