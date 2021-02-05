@@ -11,7 +11,7 @@
 let @s = 'veS"'
 
 " Timeout
-let g:which_key_timeout = 200
+" let g:which_key_timeout = 500
 
 let g:which_key_display_names = {'<CR>': '↵', '<TAB>': '⇆'}
 
@@ -32,7 +32,7 @@ let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
 " By default timeoutlen is 1000 ms
-set timeoutlen=500
+set timeoutlen=400
 
 
 " Coc Search & refactor
@@ -71,7 +71,6 @@ let g:which_key_map['u'] = [ ':UndotreeToggle'                                 ,
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
 let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
-let g:which_key_map['b'] = [ 'Buffers'                                            , 'fzf-buffer' ]
 
 
 
@@ -97,28 +96,28 @@ let g:which_key_map.a = {
       \ }
 
 " b is for buffer
-" let g:which_key_map.b = {
-"       \ 'name' : '+buffer' ,
-"       \ '>' : [':BufferMoveNext'        , 'move next'],
-"       \ '<' : [':BufferMovePrevious'    , 'move prev'],
-"       \ '1' : [':BufferGoto 1'          , 'buffer 1'],
-"       \ '2' : [':BufferGoto 2'          , 'buffer 2'],
-"       \ '3' : [':BufferGoto 3'          , 'buffer 3'],
-"       \ '4' : [':BufferGoto 4'          , 'buffer 4'],
-"       \ '5' : [':BufferGoto 5'          , 'buffer 5'],
-"       \ '6' : [':BufferGoto 6'          , 'buffer 6'],
-"       \ '7' : [':BufferGoto 7'          , 'buffer 7'],
-"       \ '8' : [':BufferGoto 8'          , 'buffer 8'],
-"       \ '9' : [':BufferGoto 9'          , 'buffer 9'],
-"       \ '0' : [':BufferGoto 0'          , 'buffer 0'],
-"       " \ 'b' : [':BufferPick'            , 'pick buffer'],
-"       \ 'd' : [':Bdelete'               , 'delete-buffer'],
-"       \ 'D' : [':BufferOrderByDirectory', 'order by directory'],
-"       \ 'f' : ['bfirst'                 , 'first-buffer'],
-"       \ 'l' : ['blast'                  , 'last buffer'],
-"       \ 'b' : ['Buffers'                , 'fzf-buffer'],
-"       \ }
-
+let g:which_key_map.b = {
+      \ 'name' : '+buffer' ,
+      \ 'b' : ['Buffers'                , 'fzf-buffer'],
+      \ '1' : [':BufferGoto 1'          , 'buffer 1'],
+      \ '2' : [':BufferGoto 2'          , 'buffer 2'],
+      \ '3' : [':BufferGoto 3'          , 'buffer 3'],
+      \ '4' : [':BufferGoto 4'          , 'buffer 4'],
+      \ '5' : [':BufferGoto 5'          , 'buffer 5'],
+      \ '6' : [':BufferGoto 6'          , 'buffer 6'],
+      \ '7' : [':BufferGoto 7'          , 'buffer 7'],
+      \ '8' : [':BufferGoto 8'          , 'buffer 8'],
+      \ '9' : [':BufferGoto 9'          , 'buffer 9'],
+      \ '0' : [':BufferGoto 0'          , 'buffer 0'],
+      \ '?' : [':BufferPick'            , 'pick buffer'],
+      \ 'd' : [':Bdelete'               , 'delete-buffer'],
+      \ 'D' : [':BufferOrderByDirectory', 'order by directory'],
+      \ 'f' : ['bfirst'                 , 'first-buffer'],
+      \ 'l' : ['blast'                  , 'last buffer'],
+      \ 'g' : [':sbr'                , '分割窗口到第一个缓冲区'],
+      \ 'v' : [''                , '分割窗口到第一个缓冲区'],
+      \ }
+"
 " nnoremap <silent> <leader>c} V}:call NERDComment('x', 'toggle')<CR>
 " nnoremap <silent> <leader>c{ V{:call NERDComment('x', 'toggle')<CR>
 
