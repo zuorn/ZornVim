@@ -21,14 +21,17 @@ let localleader=";"
 vnoremap < <gv
 vnoremap > >gv
 
-if exists('g:vscode')
+" Make Y to copy till the end of the line
+nnoremap Y Y$
+" Copy to system clipboard
+vnoremap Y "+y
 
+	
   " Simulate same TAB behavior in VSCode
   " nmap <Tab> :Tabnext<CR>
   nnoremap <Tab> :bnext<CR>
   " nmap <S-Tab> :Tabprev<CR>
   nnoremap <S-Tab> :bprevious<CR>
-else
 
   " Better nav for omnicomplete
   inoremap <expr> <c-j> ("\<C-n>")
@@ -111,7 +114,6 @@ else
       nnoremap <C-Right> :vertical resize +2<CR>
   endif
 
-endif
 
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")

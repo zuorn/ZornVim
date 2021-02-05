@@ -10,7 +10,6 @@ let g:coc_global_extensions = [
   \ 'coc-html',
   \ 'coc-css',
   \ 'coc-stylelintplus',
-  \ 'coc-emoji',
   \ 'coc-yaml',
   \ 'coc-pyright',
   \ 'coc-explorer',

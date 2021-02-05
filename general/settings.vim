@@ -3,12 +3,12 @@ set formatoptions-=cro                  " 停止注释的新行继续
 set relativenumber
 syntax enable                           " 启用语法突出显示
 set hidden                              " 保持多个缓冲区打开多个缓冲区所需
-set wrap                              " 换行
+set wrap                                " 换行
 set whichwrap+=<,>,[,],h,l
 set encoding=utf-8                      " 显示的编码
 set pumheight=10                        " 缩小弹出菜单
 set fileencoding=utf-8                  " 写入文件的编码
-set ruler              			            " 一直显示光标位置
+set ruler           		            " 一直显示光标位置
 set cmdheight=2                         " 显示消息的更多空间
 set mouse=a                             " 启用鼠标
 set splitbelow                          " 水平分割线将自动位于下方
@@ -33,7 +33,7 @@ set shortmess+=c                        " 不要将消息传递到| ins-completi
 set signcolumn=yes                      " 始终显示标志列，否则每次都会移动文本
 set updatetime=300                      
 set timeoutlen=100                      " 默认情况下timeoutlen为1000毫秒
-set clipboard=unnamedplus               " 在vim和其他所有内容之间复制粘贴
+" set clipboard=unnamedplus               " 在vim和其他所有内容之间复制粘贴
 set incsearch
 set guifont=JetBrainsMono\ Nerd\ Font
 
