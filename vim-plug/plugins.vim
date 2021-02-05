@@ -124,12 +124,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " --------------------------------------- Markdown -------------------------------
     " Markdown Preview
-    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+    " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
     " Markdown
-    Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-    Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
-    Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
+    " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+    " Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
+    " Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
     " Bullets.vim是一个用于自动项目符号列表的Vim插件。
     Plug 'dkarter/bullets.vim'
 

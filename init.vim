@@ -48,7 +48,7 @@ source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/goyo.vim
 
 source $HOME/.config/nvim/plug-config/rnvimr.vim
-source $HOME/.config/nvim/plug-config/markdown-preview.vim
+" source $HOME/.config/nvim/plug-config/markdown-preview.vim
 source $HOME/.config/nvim/plug-config/vim-wiki.vim
 
 source $HOME/.config/nvim/plug-config/rainbow.vim
