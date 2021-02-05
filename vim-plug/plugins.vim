@@ -82,21 +82,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
     " Markdown
-    " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-    " Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
-    " Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
-
+    " Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
+    Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
+    Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
+    " 对齐
+    Plug 'godlygeek/tabular'
     " Bullets.vim是一个用于自动项目符号列表的Vim插件。
     Plug 'dkarter/bullets.vim'
-
-
-
-
-    " --------------------------------------- abandon -------------------------------
-    " 状态行
-    " Plug 'vim-airline/vim-airline'
-    " 状态行主题
-    " Plug 'vim-airline/vim-airline-themes'
 
     " undo time travel
     Plug 'mbbill/undotree'
@@ -131,6 +123,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Snippets
     Plug 'honza/vim-snippets'
     " Plug 'mattn/emmet-vim'
+
+
+
+
+    " --------------------------------------- abandon -------------------------------
+    " 状态行
+    " Plug 'vim-airline/vim-airline'
+    " 状态行主题
+    " Plug 'vim-airline/vim-airline-themes'
 
 
 call plug#end()

@@ -1,6 +1,5 @@
-# ZornVim 
+[#](#) ZornVim 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnd71frmhpj31ag0u0wyd.jpg)
 
 ## 安装之前需要干的事情
 

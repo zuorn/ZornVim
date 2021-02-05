@@ -39,6 +39,8 @@ source $HOME/.config/nvim/plug-config/codi.vim
 source $HOME/.config/nvim/plug-config/galaxyline.vim
 source $HOME/.config/nvim/plug-config/accelerated-jk.vim
 source $HOME/.config/nvim/plug-config/vim-auto-save.vim
+source $HOME/.config/nvim/plug-config/barbar.vim
+source $HOME/.config/nvim/plug-config/tabular.vim
 
 " git integration
 source $HOME/.config/nvim/plug-config/git-messenger.vim
@@ -54,9 +56,14 @@ luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 
 " TODO
-" source $HOME/.config/nvim/plug-config/markdown-preview.vim
-" source $HOME/.config/nvim/plug-config/barbar.vim
 " MarkDown
+" source $HOME/.config/nvim/plug-config/markdown-preview.vim
 " source $HOME/.config/nvim/snips/md-snippets.vim
-" lua require'plug-colorizer'
+source $HOME/.config/nvim/plug-config/instant-markdown.vim
+
+
+
+" key mappings
+inoremap <expr> <C-j> <C-n>
+inoremap <expr> <C-k> <C-p>
 

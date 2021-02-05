@@ -109,9 +109,5 @@
       "filetypes": ["lua"],
       "trace.server": "verbose"
     }
-  },
-
-  "bookmark.sign": "",
-
-
+  }
 }
