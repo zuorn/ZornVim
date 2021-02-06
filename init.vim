@@ -60,10 +60,13 @@ luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " source $HOME/.config/nvim/plug-config/markdown-preview.vim
 " source $HOME/.config/nvim/snips/md-snippets.vim
 source $HOME/.config/nvim/plug-config/instant-markdown.vim
+source $HOME/.config/nvim/plug-config/markdown.vim
 
 
 
 " key mappings
 inoremap <expr> <C-j> <C-n>
 inoremap <expr> <C-k> <C-p>
+
+set shell=bash\ -i
 

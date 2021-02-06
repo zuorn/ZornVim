@@ -77,18 +77,23 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+    " 对齐
+    Plug 'godlygeek/tabular'
+    " Bullets.vim是一个用于自动项目符号列表的Vim插件。
+    Plug 'dkarter/bullets.vim'
+
     " --------------------------------------- Markdown -------------------------------
     " Markdown Preview
     " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
     " Markdown
-    " Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
+    Plug 'iamcco/markdown-preview.nvim'
+    Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
     Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
     Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
-    " 对齐
-    Plug 'godlygeek/tabular'
-    " Bullets.vim是一个用于自动项目符号列表的Vim插件。
-    Plug 'dkarter/bullets.vim'
+    " markdown 语法高亮
+    Plug 'plasticboy/vim-markdown'
+
 
     " undo time travel
     Plug 'mbbill/undotree'
