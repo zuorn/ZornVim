@@ -1,4 +1,6 @@
-" auto
+
+" auto install
+
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -10,6 +12,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " debug
     Plug 'puremourning/vimspector'
+    Plug 'szw/vim-maximizer'
     " 修改启动界面
     Plug 'mhinz/vim-startify'
     " vim 中文帮助文档
@@ -21,31 +24,27 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 注释
     Plug 'preservim/nerdcommenter'
     " 文件管理器
-    " Plug 'kevinhwang91/rnvimr'
-    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+    Plug 'kevinhwang91/rnvimr'
+    " Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
     " Sneak
     Plug 'justinmk/vim-sneak'
-    " Intuitive buffer closing
+    " 缓冲区操作 
     Plug 'moll/vim-bbye'
     " Vim Wiki
-    Plug 'https://github.com/vimwiki/vimwiki.git'
-    " Rainbow brackets
-    " 彩虹括号
-    " Plug 'luochen1990/rainbow'
-    Plug 'junegunn/rainbow_parentheses.vim'
+    Plug 'vimwiki/vimwiki'
     " 自动缩进
     Plug 'tpope/vim-sleuth'
     " 添加代码缩进
     Plug 'yggdroot/indentline'
     " 自动补全双括号等
     Plug 'jiangmiao/auto-pairs'
+
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-    " If you want to display icons, then use one of these plugins:
+
     Plug 'kyazdani42/nvim-web-devicons' " lua
     Plug 'ryanoasis/vim-devicons' " vimscript
     Plug 'mg979/vim-xtabline'
 
-    " 看文档 
     Plug 'ajmwagar/vim-deus'  
     Plug 'joshdick/onedark.vim'
     " Colorizer
@@ -82,17 +81,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Bullets.vim是一个用于自动项目符号列表的Vim插件。
     Plug 'dkarter/bullets.vim'
 
-    " --------------------------------------- Markdown -------------------------------
-    " Markdown Preview
-    " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
     " Markdown
     Plug 'iamcco/markdown-preview.nvim'
     Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
     Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
     Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
-    " markdown 语法高亮
-    " Plug 'plasticboy/vim-markdown'
 
 
     " undo time travel
@@ -125,11 +119,29 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Plug 'nvim-treesitter/playground'
 
+    " markdown
+    Plug 'machakann/vim-highlightedyank'
+
     " Snippets
     Plug 'honza/vim-snippets'
     " Plug 'mattn/emmet-vim'
 
-
+    " --------------------------------------- TODO ----------------------------------
+     " Convert binary, hex, etc..
+    Plug 'glts/vim-radical'
+     " Text Navigation
+    Plug 'unblevable/quick-scope'
+     " Closetags
+    Plug 'alvan/vim-closetag'
+     " Better tabline
+    Plug 'romgrk/barbar.nvim'
+      " Auto change html tags
+    Plug 'AndrewRadev/tagalong.vim'
+     " live server
+    Plug 'turbio/bracey.vim'
+    " Easily Create Gists
+    Plug 'mattn/vim-gist'
+    Plug 'mattn/webapi-vim'
 
 
     " --------------------------------------- abandon -------------------------------

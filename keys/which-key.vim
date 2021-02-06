@@ -118,9 +118,30 @@ let g:which_key_map.a = {
       \ }
 
 " b is for buffer
+" let g:which_key_map.b = {
+      " \ 'name' : '+buffer' ,
+      " \ 'b' : ['Buffers'                , 'fzf-buffer'],
+      " \ '1' : [':buffer 1'          , 'buffer 1'],
+      " \ '2' : [':buffer 2'          , 'buffer 2'],
+      " \ '3' : [':buffer 3'          , 'buffer 3'],
+      " \ '4' : [':buffer 4'          , 'buffer 4'],
+      " \ '5' : [':buffer 5'          , 'buffer 5'],
+      " \ '6' : [':buffer 6'          , 'buffer 6'],
+      " \ '7' : [':buffer 7'          , 'buffer 7'],
+      " \ '8' : [':buffer 8'          , 'buffer 8'],
+      " \ '9' : [':buffer 9'          , 'buffer 9'],
+      " \ 'd' : [':Bdelete'               , 'delete-buffer'],
+      " \ 'D' : [':BufferOrderByDirectory', 'order by directory'],
+      " \ 'f' : ['bfirst'                 , 'first-buffer'],
+      " \ 'l' : ['blast'                  , 'last buffer'],
+      " \ }
+
+
+" b is for buffer
 let g:which_key_map.b = {
       \ 'name' : '+buffer' ,
-      \ 'b' : ['Buffers'                , 'fzf-buffer'],
+      \ '>' : [':BufferMoveNext'        , 'move next'],
+      \ '<' : [':BufferMovePrevious'    , 'move prev'],
       \ '1' : [':BufferGoto 1'          , 'buffer 1'],
       \ '2' : [':BufferGoto 2'          , 'buffer 2'],
       \ '3' : [':BufferGoto 3'          , 'buffer 3'],
@@ -131,11 +152,15 @@ let g:which_key_map.b = {
       \ '8' : [':BufferGoto 8'          , 'buffer 8'],
       \ '9' : [':BufferGoto 9'          , 'buffer 9'],
       \ '0' : [':BufferGoto 0'          , 'buffer 0'],
-      \ '?' : [':BufferPick'            , 'pick buffer'],
+      \ 'b' : [':BufferPick'            , 'pick buffer'],
       \ 'd' : [':Bdelete'               , 'delete-buffer'],
       \ 'D' : [':BufferOrderByDirectory', 'order by directory'],
       \ 'f' : ['bfirst'                 , 'first-buffer'],
       \ 'l' : ['blast'                  , 'last buffer'],
+      \ 'L' : [':BufferOrderByLanguage' , 'order by language'],
+      \ 'n' : ['bnext'                  , 'next-buffer'],
+      \ 'p' : ['bprevious'              , 'previous-buffer'],
+      \ '?' : ['Buffers'                , 'fzf-buffer'],
       \ }
 
 " nnoremap <silent> <leader>c} V}:call NERDComment('x', 'toggle')<CR>
@@ -369,25 +394,25 @@ let g:which_key_map.t = {
       \ }
 
 " w is for wiki
-" let g:which_key_map.w = {
-"       \ 'name' : '+wiki' ,
-"       \ 'w' : ['<Plug>VimwikiIndex'                              , 'ncdu'],
-"       \ 'n' : ['<plug>(wiki-open)'                              , 'ncdu'],
-"       \ 'j' : ['<plug>(wiki-journal)'                              , 'ncdu'],
-"       \ 'R' : ['<plug>(wiki-reload)'                              , 'ncdu'],
-"       \ 'c' : ['<plug>(wiki-code-run)'                              , 'ncdu'],
-"       \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                              , 'ncdu'],
-"       \ 'g' : ['<plug>(wiki-graph-in)'                              , 'ncdu'],
-"       \ 'G' : ['<plug>(wiki-graph-out)'                              , 'ncdu'],
-"       \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'ncdu'],
-"       \ 'd' : ['<plug>(wiki-page-delete)'                              , 'ncdu'],
-"       \ 'r' : ['<plug>(wiki-page-rename)'                              , 'ncdu'],
-"       \ 't' : ['<plug>(wiki-page-toc)'                              , 'ncdu'],
-"       \ 'T' : ['<plug>(wiki-page-toc-local)'                              , 'ncdu'],
-"       \ 'e' : ['<plug>(wiki-export)'                              , 'ncdu'],
-"       \ 'u' : ['<plug>(wiki-list-uniq)'                              , 'ncdu'],
-"       \ 'U' : ['<plug>(wiki-list-uniq-local)'                              , 'ncdu'],
-"       \ }
+let g:which_key_map.w = {
+      \ 'name' : '+wiki' ,
+      \ 'w' : ['<Plug>VimwikiIndex'                              , 'ncdu'],
+      \ 'n' : ['<plug>(wiki-open)'                              , 'ncdu'],
+      \ 'j' : ['<plug>(wiki-journal)'                              , 'ncdu'],
+      \ 'R' : ['<plug>(wiki-reload)'                              , 'ncdu'],
+      \ 'c' : ['<plug>(wiki-code-run)'                              , 'ncdu'],
+      \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                              , 'ncdu'],
+      \ 'g' : ['<plug>(wiki-graph-in)'                              , 'ncdu'],
+      \ 'G' : ['<plug>(wiki-graph-out)'                              , 'ncdu'],
+      \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'ncdu'],
+      \ 'd' : ['<plug>(wiki-page-delete)'                              , 'ncdu'],
+      \ 'r' : ['<plug>(wiki-page-rename)'                              , 'ncdu'],
+      \ 't' : ['<plug>(wiki-page-toc)'                              , 'ncdu'],
+      \ 'T' : ['<plug>(wiki-page-toc-local)'                              , 'ncdu'],
+      \ 'e' : ['<plug>(wiki-export)'                              , 'ncdu'],
+      \ 'u' : ['<plug>(wiki-list-uniq)'                              , 'ncdu'],
+      \ 'U' : ['<plug>(wiki-list-uniq-local)'                              , 'ncdu'],
+      \ }
 
 
 " Register which key map

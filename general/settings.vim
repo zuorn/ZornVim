@@ -36,6 +36,7 @@ set timeoutlen=100                      " 默认情况下timeoutlen为1000毫秒
 " set clipboard=unnamedplus               " 在vim和其他所有内容之间复制粘贴
 set incsearch
 set guifont=JetBrainsMono\ Nerd\ Font
+set termguicolors                       " vim-deus 推荐的
 
 " 光标停留在上次关闭的位置
 if has("autocmd")

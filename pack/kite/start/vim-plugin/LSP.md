@@ -53,5 +53,5 @@ completions.
 You should also disable the Kite plugin's completions to avoid getting
 duplicate completions:
 ```viml
-let g:kite_completions=0
+[let](let) g:kite_completions=0
 ```

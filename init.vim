@@ -32,7 +32,8 @@ source $HOME/.config/nvim/plug-config/bullets.vim
 source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/goyo.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
-source $HOME/.config/nvim/plug-config/vim-wiki.vim
+" source $HOME/.config/nvim/plug-config/vim-wiki.vim
+source $HOME/.config/nvim/plug-config/wiki.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/codi.vim
@@ -41,6 +42,10 @@ source $HOME/.config/nvim/plug-config/accelerated-jk.vim
 source $HOME/.config/nvim/plug-config/vim-auto-save.vim
 source $HOME/.config/nvim/plug-config/barbar.vim
 source $HOME/.config/nvim/plug-config/tabular.vim
+source $HOME/.config/nvim/plug-config/tagalong.vim
+source $HOME/.config/nvim/plug-config/window-swap.vim
+source $HOME/.config/nvim/plug-config/better-whitespacevim.vim
+source $HOME/.config/nvim/plug-config/closetags.vim
 
 " git integration
 source $HOME/.config/nvim/plug-config/git-messenger.vim
@@ -68,5 +73,4 @@ source $HOME/.config/nvim/plug-config/instant-markdown.vim
 inoremap <expr> <C-j> <C-n>
 inoremap <expr> <C-k> <C-p>
 
-set shell=bash\ -i
 

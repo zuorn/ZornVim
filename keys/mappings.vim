@@ -30,8 +30,10 @@ nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
 " Better nav for omnicomplete
-inoremap <expr> <C-j> <C-n>
-inoremap <expr> <C-k> <C-P>
+" inoremap <expr> <C-j> <C-n>
+" inoremap <expr> <C-k> <C-P>
+inoremap <C-j> <C-n>
+inoremap <C-k> <C-P>
 
 
 " I hate escape more than anything else
