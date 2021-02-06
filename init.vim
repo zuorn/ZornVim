@@ -57,10 +57,10 @@ luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " TODO
 " MarkDown
-" source $HOME/.config/nvim/plug-config/markdown-preview.vim
+source $HOME/.config/nvim/plug-config/markdown-preview.vim
 " source $HOME/.config/nvim/snips/md-snippets.vim
 source $HOME/.config/nvim/plug-config/instant-markdown.vim
-source $HOME/.config/nvim/plug-config/markdown.vim
+" source $HOME/.config/nvim/plug-config/markdown.vim
 
 
 

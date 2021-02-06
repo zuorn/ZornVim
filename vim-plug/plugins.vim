@@ -92,7 +92,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
     Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
     " markdown 语法高亮
-    Plug 'plasticboy/vim-markdown'
+    " Plug 'plasticboy/vim-markdown'
 
 
     " undo time travel

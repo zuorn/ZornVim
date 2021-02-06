@@ -17,19 +17,19 @@
 " autocmd Filetype markdown inoremap <buffer> ,l --------<Enter>
 "
 
-autocmd Filetype markdown inoremap <buffer> <C-j> <Esc>/<++><CR>:nohlsearch<CR>"_c4l
-autocmd Filetype markdown inoremap <buffer> <C-w> <Esc>/ <++><CR>:nohlsearch<CR>"_c5l<CR>
-autocmd Filetype markdown inoremap <buffer> <C-n> ---<Enter><Enter>
+" autocmd Filetype markdown inoremap <buffer> <C-j> <Esc>/<++><CR>:nohlsearch<CR>"_c4l
+" autocmd Filetype markdown inoremap <buffer> <C-w> <Esc>/ <++><CR>:nohlsearch<CR>"_c5l<CR>
+" autocmd Filetype markdown inoremap <buffer> <C-n> ---<Enter><Enter>
 " 加粗
-autocmd Filetype markdown inoremap <buffer> <C-b> **** <++><Esc>F*hi
-autocmd Filetype markdown inoremap <buffer> <C-s> ~~~~ <++><Esc>F~hi
-autocmd Filetype markdown inoremap <buffer> <C-i> ** <++><Esc>F*i
-autocmd Filetype markdown inoremap <buffer> <C-d> `` <++><Esc>F`i
-autocmd Filetype markdown inoremap <buffer> <C-k> ```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA
-autocmd Filetype markdown inoremap <buffer> <C-m> - [ ] 
-autocmd Filetype markdown inoremap <buffer> <C-p> ![](<++>) <++><Esc>F[a
-autocmd Filetype markdown inoremap <buffer> <C-a> [](<++>) <++><Esc>F[a
-
+" autocmd Filetype markdown inoremap <buffer> <C-b> **** <++><Esc>F*hi
+" autocmd Filetype markdown inoremap <buffer> <C-s> ~~~~ <++><Esc>F~hi
+" autocmd Filetype markdown inoremap <buffer> <C-i> ** <++><Esc>F*i
+" autocmd Filetype markdown inoremap <buffer> <C-d> `` <++><Esc>F`i
+" autocmd Filetype markdown inoremap <buffer> <C-k> ```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA
+" autocmd Filetype markdown inoremap <buffer> <C-m> - [ ]
+" autocmd Filetype markdown inoremap <buffer> <C-p> ![](<++>) <++><Esc>F[a
+" autocmd Filetype markdown inoremap <buffer> <C-a> [](<++>) <++><Esc>F[a
+"
 
 " autocmd Filetype markdown inoremap <buffer> <C-u> #<Space><Enter><++><Esc>kA
 " autocmd Filetype markdown inoremap <buffer> <C-i> ##<Space><Enter><++><Esc>kA
@@ -37,4 +37,4 @@ autocmd Filetype markdown inoremap <buffer> <C-a> [](<++>) <++><Esc>F[a
 " autocmd Filetype markdown inoremap <buffer> <C-p> ####<Space><Enter><++><Esc>kA
 "
 
-autocmd Filetype markdown inoremap <buffer> <C-l> --------<Enter>
+" autocmd Filetype markdown inoremap <buffer> <C-l> --------<Enter>
