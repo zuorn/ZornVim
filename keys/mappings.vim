@@ -13,20 +13,19 @@ imap <C-l> <C-w>l
 
 " Leader key
 let mapleader=" "
-let localleader=";"
+" let localleader=";"
 
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
+
 
 " Make Y to copy till the end of the line
 nnoremap Y Y$
 " Copy to system clipboard
 vnoremap Y "+y
 
-" nmap <Tab> :Tabnext<CR>
 nnoremap <Tab> :bnext<CR>
-" nmap <S-Tab> :Tabprev<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
 " Better nav for omnicomplete
@@ -41,6 +40,7 @@ inoremap jk <Esc>
 inoremap kj <Esc>
 vnoremap jk <Esc>
 vnoremap kj <Esc>
+
 
 inoremap <expr> <c-j> ("\<C-n>")
 cnoremap <expr> <c-k> ("\<C-p>")
@@ -63,6 +63,9 @@ nnoremap <silent> Q :q!<CR>
 
 " Use control-c instead of escape
 nnoremap <silent> <C-c> <Esc>
+vnoremap <silent> <C-c> <Esc>
+
+
 " <TAB>: completion.
 " inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 

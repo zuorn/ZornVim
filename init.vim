@@ -70,7 +70,7 @@ source $HOME/.config/nvim/plug-config/instant-markdown.vim
 
 
 " key mappings
-inoremap <expr> <C-j> <C-n>
-inoremap <expr> <C-k> <C-p>
+inoremap  <C-j> <C-n>
+inoremap  <C-k> <C-p>
 
 

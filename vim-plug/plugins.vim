@@ -17,7 +17,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify'
     " vim 中文帮助文档
     Plug 'yianwillis/vimcdoc'
-    " Vista
+    " 格式化代码
     Plug 'liuchengxu/vista.vim'
     " which key
     Plug 'liuchengxu/vim-which-key'
@@ -30,8 +30,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'justinmk/vim-sneak'
     " 缓冲区操作 
     Plug 'moll/vim-bbye'
-    " Vim Wiki
-    Plug 'vimwiki/vimwiki'
     " 自动缩进
     Plug 'tpope/vim-sleuth'
     " 添加代码缩进
@@ -124,7 +122,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Snippets
     Plug 'honza/vim-snippets'
-    " Plug 'mattn/emmet-vim'
 
     " --------------------------------------- TODO ----------------------------------
      " Convert binary, hex, etc..
@@ -142,6 +139,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Easily Create Gists
     Plug 'mattn/vim-gist'
     Plug 'mattn/webapi-vim'
+    " Vim Wiki
+    " Plug 'vimwiki/vimwiki'
 
 
     " --------------------------------------- abandon -------------------------------
