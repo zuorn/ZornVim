@@ -124,9 +124,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'honza/vim-snippets'
 
     " --------------------------------------- TODO ----------------------------------
-     " Convert binary, hex, etc..
+    " 进制转换
     Plug 'glts/vim-radical'
-     " Text Navigation
+    " 文字导航
     Plug 'unblevable/quick-scope'
      " Closetags
     Plug 'alvan/vim-closetag'
@@ -143,7 +143,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'vimwiki/vimwiki'
 
 
-    " --------------------------------------- abandon -------------------------------
+    " --------------------------------------- 弃用 -------------------------------
     " 状态行
     " Plug 'vim-airline/vim-airline'
     " 状态行主题

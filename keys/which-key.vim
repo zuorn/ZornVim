@@ -402,7 +402,7 @@ let g:which_key_map.w = {
       \ 'j' : ['<plug>(wiki-journal)'                              , 'wiki-journal'],
       \ 'R' : ['<plug>(wiki-reload)'                              , 'wiki-reload'],
       \ 'c' : ['<plug>(wiki-code-run)'                              , 'wiki-code-run'],
-      \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                              , 'wiki-graph-find-backlinks'],
+      \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                  , 'wiki-graph-find-backlinks'],
       \ 'g' : ['<plug>(wiki-graph-in)'                              , 'wiki-graph-in'],
       \ 'G' : ['<plug>(wiki-graph-out)'                              , 'wiki-graph-out'],
       \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'wiki-link-toggle'],
