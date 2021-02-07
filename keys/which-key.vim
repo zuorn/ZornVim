@@ -47,7 +47,6 @@ let g:which_key_max_size = 0
 " let g:which_key_position = 'topleft'
 " let g:which_key_vertical = 1
 
-" Change the colors if you want
 
 " Hide status line
 autocmd! FileType which_key
@@ -59,21 +58,23 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 let g:which_key_map[';'] = [ '<plug>NERDCommenterInvert'                                 , 'Comment' ]
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                                     , 'open init' ]
 let g:which_key_map['/'] = [ ':Commands'                                       , 'commands' ]
-let g:which_key_map[','] = [ '<Plug>(coc-translator-pv)'                             , 'popup' ]
+let g:which_key_map['v'] = [ '<Plug>(coc-translator-pv)'                             , 'popup' ]
 let g:which_key_map['='] = [ '<C-W>='                                          , 'balance windows' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+'   , 'explorer' ]
 let g:which_key_map['h'] = [ '<C-W>s'                                          , 'split below']
-" let g:which_key_map['n'] = [ ':let @/ = ""'                                    , 'no highlight' ]
-let g:which_key_map['o'] = [ ':RnvimrToggle'                                   , 'open' ]
+let g:which_key_map['n'] = [ ':let @/ = ""'                                    , 'no highlight' ]
+let g:which_key_map['o'] = [ ':RnvimrToggle'                                   , 'RnvimrToggle' ]
 let g:which_key_map['p'] = [ ':Files'                                          , 'search files' ]
 " let g:which_key_map['q'] = [ ':clo'                                                   , 'close' ]
-let g:which_key_map['q'] = [ ':q'                                                   , 'close' ]
+let g:which_key_map['q'] = [ ':q'                                                   , 'quit' ]
 let g:which_key_map['Q'] = [ '<Plug>(coc-fix-current)'                         , 'quickfix' ]
 let g:which_key_map['u'] = [ ':UndotreeToggle'                                 , 'undo tree']
-" let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
+let g:which_key_map['\'] = [ '<C-W>v'                                          , 'split right']
 " let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
-let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
-let g:which_key_map['v'] = [ '<C-W>L'                                            , 'move window right' ]
+let g:which_key_map['0'] = [ 'Goyo'                                            , 'zen' ]
+" let g:which_key_map['\'] = [ '<C-W>L'                                            , 'move window right' ]
+let g:which_key_map[' '] = [ '<esc>'                                            , 'ESC' ]
+
 
 
 " Group mappings
@@ -205,7 +206,7 @@ let g:which_key_map.d = {
       \ }
 
 " f is for find and replace
-let g:which_key_map.f = {
+let g:which_key_map.z = {
       \ 'name' : '+find & replace' ,
       \ 'f' : [':Farr --source=vimgrep'    , 'file'],
       \ 'p' : [':Farr --source=rgnvim'     , 'project'],
@@ -387,13 +388,11 @@ let g:which_key_map.t = {
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
       \ 'n' : [':FloatermNew node'                              , 'node'],
-      \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
       \ 'p' : [':FloatermNew python'                            , 'python'],
       \ 'm' : [':FloatermNew lazynpm'                           , 'npm'],
       \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
       \ 't' : [':FloatermToggle'                                , 'toggle'],
       \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
-      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
       \ }
 
 " w is for wiki

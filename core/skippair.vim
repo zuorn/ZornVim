@@ -6,5 +6,5 @@ func SkipPair()
         return "\t"  
     endif  
 endfunc  
-" 将tab键绑定为跳出括号  
+" 将C-n 键绑定为跳出括号  
 inoremap <C-n> <c-r>=SkipPair()<CR>
