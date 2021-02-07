@@ -1,12 +1,12 @@
 # ZornVim
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnd71frmhpj31ag0u0wyd.jpg)
+![1](https://tva1.sinaimg.cn/large/008eGmZEly1gnd71frmhpj31ag0u0wyd.jpg)
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gndix0ki3zj31ag0u07mk.jpg)
+![2](https://tva1.sinaimg.cn/large/008eGmZEly1gndix0ki3zj31ag0u07mk.jpg)
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gndixbx9dhj31ag0u0dze.jpg)
+![3](https://tva1.sinaimg.cn/large/008eGmZEly1gndixbx9dhj31ag0u0dze.jpg)
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gndixopk4aj31ag0u04cc.jpg)
+![4](https://tva1.sinaimg.cn/large/008eGmZEly1gndixopk4aj31ag0u04cc.jpg)
 
 ## 安装之前需要干的事情
 
@@ -19,7 +19,7 @@
 
 ## 安装此配置
 
-```
+```sh
 git clone https://github.com/zuorn/ZornVim ~/.config/nvim
 ```
 

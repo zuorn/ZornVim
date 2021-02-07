@@ -5,7 +5,7 @@
 " Shift + L	打开撤回历史
 " u	更新的记录
 " e	更老的记录
-noremap L :UndotreeToggle<CR>
+" noremap L :UndotreeToggle<CR>
 let g:undotree_DiffAutoOpen = 1
 let g:undotree_SetFocusWhenToggle = 1
 let g:undotree_ShortIndicators = 1

@@ -113,6 +113,8 @@ let g:which_key_map.a = {
       \ 't' : [':GenTocGFM'              , 'markdown toc'],
       \ 'm' : [':MarkdownPreview'        , 'markdown preview'],
       \ 'M' : [':MarkdownPreviewStop'    , 'markdown preview stop'],
+      \ 'o' : [':CocCommand markmap.create' , 'markmap'],
+      \ 'j' : ['<Plug>(coc-codeaction)' , 'Autofix'],
       \ 's' : [':s/\%V\(.*\)\%V/"\1"/'   , 'surround'],
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
       \ '-' : [':FloatermToggle'         , 'terminal'],

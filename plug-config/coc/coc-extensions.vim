@@ -24,6 +24,7 @@ let g:coc_global_extensions = [
   \ 'coc-sql',
   \ 'coc-markdownlint',
   \ 'coc-translator',
+  \ 'coc-markmap' ,
   \ ]
   " \ 'coc-tabnine',
   " \ 'coc-highlight',
