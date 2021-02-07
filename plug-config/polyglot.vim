@@ -1,7 +1,11 @@
-let g:polyglot_disabled = ['csv']
 
-let g:python_highlight_all=1
+" 禁用
+let g:polyglot_disabled = ['markdown']
 
-let g:vim_jsx_pretty_colorful_config = 1
+" 只禁用语法高亮
+" let g:polyglot_disabled = ['markdown.plugin']
 
-set re=0
+
+ 
+
+

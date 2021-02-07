@@ -63,15 +63,17 @@ let g:which_key_map[','] = [ '<Plug>(coc-translator-pv)'                        
 let g:which_key_map['='] = [ '<C-W>='                                          , 'balance windows' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+'   , 'explorer' ]
 let g:which_key_map['h'] = [ '<C-W>s'                                          , 'split below']
-let g:which_key_map['n'] = [ ':let @/ = ""'                                    , 'no highlight' ]
+" let g:which_key_map['n'] = [ ':let @/ = ""'                                    , 'no highlight' ]
 let g:which_key_map['o'] = [ ':RnvimrToggle'                                   , 'open' ]
 let g:which_key_map['p'] = [ ':Files'                                          , 'search files' ]
-let g:which_key_map['q'] = [ ':q'                                                   , 'quit' ]
+" let g:which_key_map['q'] = [ ':clo'                                                   , 'close' ]
+let g:which_key_map['q'] = [ ':q'                                                   , 'close' ]
 let g:which_key_map['Q'] = [ '<Plug>(coc-fix-current)'                         , 'quickfix' ]
 let g:which_key_map['u'] = [ ':UndotreeToggle'                                 , 'undo tree']
-let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
-let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
+" let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
+" let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
 let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
+let g:which_key_map['v'] = [ '<C-W>L'                                            , 'move window right' ]
 
 
 " Group mappings

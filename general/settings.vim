@@ -14,7 +14,7 @@ set mouse=a                             " 启用鼠标
 set splitbelow                          " 水平分割线将自动位于下方
 set splitright                          " 垂直分割将自动在右侧
 set t_Co=256                            " Support 256 colors
-set conceallevel=0                      " So that I can see `` in markdown files
+set conceallevel=0                      " markdown 控制隐藏 2 是开启
 set tabstop=4                           " 为标签插入4个空格
 set shiftwidth=2                        " 更改为缩进插入的空格字符的数量
 set smarttab                            " 使制表更加智能，将使您意识到2 vs 4
@@ -37,6 +37,7 @@ set timeoutlen=100                      " 默认情况下timeoutlen为1000毫秒
 set incsearch
 set guifont=JetBrainsMono\ Nerd\ Font
 set termguicolors                       " vim-deus 推荐的
+set nocompatible                        " ployglot 推荐的
 
 " 光标停留在上次关闭的位置
 if has("autocmd")

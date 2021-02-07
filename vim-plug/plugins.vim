@@ -45,7 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
 
     " vim 语言包
-    " Plug 'sheerun/vim-polyglot'
+    Plug 'sheerun/vim-polyglot'
 
     " 快速跳转
     Plug 'easymotion/vim-easymotion'
@@ -71,7 +71,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " 对齐
-    " Plug 'godlygeek/tabular'
+    Plug 'godlygeek/tabular'
+    Plug 'plasticboy/vim-markdown'
 
 
     " Markdown
@@ -90,8 +91,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " undo time travel
     Plug 'mbbill/undotree'
 
-    " Swap windows
-    " Plug 'wesQ3/vim-windowswap'
 
     " Git
     Plug 'airblade/vim-gitgutter'
@@ -107,7 +106,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'metakirby5/codi.vim'
 
     " Surround
-    " Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-surround'
     " Have the file system follow you around
     Plug 'airblade/vim-rooter'
 
@@ -115,7 +114,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'christianchiarulli/nvcode-color-schemes.vim'
 
-    " Plug 'nvim-treesitter/playground'
+    Plug 'nvim-treesitter/playground'
 
 
     " Snippets
@@ -133,7 +132,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
       " Auto change html tags
     Plug 'AndrewRadev/tagalong.vim'
      " live server
-    " Plug 'turbio/bracey.vim'
+    Plug 'turbio/bracey.vim'
     " Easily Create Gists
     Plug 'mattn/vim-gist'
     Plug 'mattn/webapi-vim'
@@ -148,7 +147,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'liuchengxu/vista.vim'
 
     " Sneak
-    " Plug 'justinmk/vim-sneak'
+    Plug 'justinmk/vim-sneak'
 
 
 

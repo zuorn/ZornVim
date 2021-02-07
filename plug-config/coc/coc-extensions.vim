@@ -22,6 +22,7 @@ let g:coc_global_extensions = [
   \ 'coc-lua',
   \ 'coc-marketplace',
   \ 'coc-sql',
+  \ 'coc-markdownlint',
   \ 'coc-translator',
   \ ]
   " \ 'coc-tabnine',
