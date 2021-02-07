@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/zuorn/.config/spacevim'
 let g:netrw_dirhist_5='/Users/zuorn/.hammerspoon'
 let g:netrw_dirhist_4='/Users/zuorn/vimwiki'
 let g:netrw_dirhist_3='/Users/zuorn/vimer/tnvim'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='/Users/zuorn/.config/nvim/.gradle'
 let g:netrw_dirhist_9='/Users/zuorn/.config/nvim'
 let g:netrw_dirhist_8='/Users/zuorn/.config/ranger'
 let g:netrw_dirhist_7='/Users/zuorn/.config/kitty'
-let g:netrw_dirhist_6='/Users/zuorn/.hammerspoon'

@@ -46,6 +46,7 @@ source $HOME/.config/nvim/plug-config/tagalong.vim
 source $HOME/.config/nvim/plug-config/window-swap.vim
 source $HOME/.config/nvim/plug-config/better-whitespacevim.vim
 source $HOME/.config/nvim/plug-config/closetags.vim
+source $HOME/.config/nvim/plug-config/easy-align.vim
 
 " git integration
 source $HOME/.config/nvim/plug-config/git-messenger.vim
@@ -59,12 +60,16 @@ source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 luafile $HOME/.config/nvim/lua/ZornVimline.lua
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
+" core
+source $HOME/.config/nvim/core/skippair.vim
+
 
 " TODO
 " MarkDown
-source $HOME/.config/nvim/plug-config/markdown-preview.vim
-" source $HOME/.config/nvim/snips/md-snippets.vim
-source $HOME/.config/nvim/plug-config/instant-markdown.vim
+" source $HOME/.config/nvim/snips/md.vim
+" source $HOME/.config/nvim/plug-config/markdown-preview.vim
+source $HOME/.config/nvim/snips/md-snippets.vim
+" source $HOME/.config/nvim/plug-config/instant-markdown.vim
 " source $HOME/.config/nvim/plug-config/markdown.vim
 
 

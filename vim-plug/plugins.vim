@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'yianwillis/vimcdoc'
     " 格式化代码
     Plug 'liuchengxu/vista.vim'
+
     " which key
     Plug 'liuchengxu/vim-which-key'
     " 注释
@@ -36,6 +37,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'yggdroot/indentline'
     " 自动补全双括号等
     Plug 'jiangmiao/auto-pairs'
+
 
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 
@@ -76,15 +78,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " 对齐
     Plug 'godlygeek/tabular'
-    " Bullets.vim是一个用于自动项目符号列表的Vim插件。
-    Plug 'dkarter/bullets.vim'
 
 
     " Markdown
-    Plug 'iamcco/markdown-preview.nvim'
-    Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
-    Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
+
+    " markdown 实时预览
+    Plug 'iamcco/mathjax-support-for-mkdp'
+    Plug 'iamcco/markdown-preview.vim'
+    " markdown toc
     Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
+    " Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
+
+    " Bullets.vim是一个用于自动项目符号列表的Vim插件。
+    Plug 'dkarter/bullets.vim'
 
 
     " undo time travel
@@ -117,15 +123,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Plug 'nvim-treesitter/playground'
 
-    " markdown
-    Plug 'machakann/vim-highlightedyank'
 
     " Snippets
     Plug 'honza/vim-snippets'
 
     " --------------------------------------- TODO ----------------------------------
     " 进制转换
-    Plug 'glts/vim-radical'
+    " Plug 'glts/vim-radical'
     " 文字导航
     Plug 'unblevable/quick-scope'
      " Closetags
@@ -141,13 +145,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/webapi-vim'
     " Vim Wiki
     " Plug 'vimwiki/vimwiki'
-
+    " 自动格式化
+    " Plugin 'Chiel92/vim-autoformat'
+    " 普通模式和可视模式下按 ga+ 符号可根据符号对齐文本
+    " Plug 'junegunn/vim-easy-align'
 
     " --------------------------------------- 弃用 -------------------------------
     " 状态行
     " Plug 'vim-airline/vim-airline'
     " 状态行主题
     " Plug 'vim-airline/vim-airline-themes'
+    " spacevim markdown
 
 
 call plug#end()

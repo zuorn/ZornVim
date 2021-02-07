@@ -108,8 +108,8 @@ let g:which_key_map.a = {
       \ 'l' : [':Bracey'                 , 'start live server'],
       \ 'L' : [':BraceyStop'             , 'stop live server'],
       \ 't' : [':GenTocGFM'              , 'markdown toc'],
-      \ 'm' : [':InstantMarkdownPreview'        , 'markdown preview'],
-      \ 'M' : [':InstantMarkdownStop'    , 'markdown preview stop'],
+      \ 'm' : [':MarkdownPreview'        , 'markdown preview'],
+      \ 'M' : [':MarkdownPreviewStop'    , 'markdown preview stop'],
       \ 's' : [':s/\%V\(.*\)\%V/"\1"/'   , 'surround'],
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
       \ '-' : [':FloatermToggle'         , 'terminal'],
@@ -170,7 +170,7 @@ let g:which_key_map.b = {
 " c is for Comment
 let g:which_key_map.c = {
       \ 'name' : '+Comment' ,
-      \ 'c' : ['<plug>NERDCommenterComment'              , 'CommenterComment'],
+      \ 'c' : ['<plug>NERDCommenterComment', 'CommenterComment'],
       \ 'n' : ['<plug>NERDCommenterNested'                  ,'CommenterNested'],
       \ '<space>':['<plug>NERDCommenterToggle',             'CommenterToggle'],
       \ 'm':['<plug>NERDCommenterMinimal',                  'CommenterMinimal'],
