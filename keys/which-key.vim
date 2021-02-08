@@ -398,29 +398,29 @@ let g:which_key_map.t = {
       \ }
 
 " w is for wiki
-let g:which_key_map.w = {
-      \ 'name' : '+wiki' ,
-      \ 'w' : ['<Plug>VimwikiIndex'                              , 'VimwikiIndex'],
-      \ 'n' : ['<plug>(wiki-open)'                              , 'wiki-open'],
-      \ 'j' : ['<plug>(wiki-journal)'                              , 'wiki-journal'],
-      \ 'R' : ['<plug>(wiki-reload)'                              , 'wiki-reload'],
-      \ 'c' : ['<plug>(wiki-code-run)'                              , 'wiki-code-run'],
-      \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                  , 'wiki-graph-find-backlinks'],
-      \ 'g' : ['<plug>(wiki-graph-in)'                              , 'wiki-graph-in'],
-      \ 'G' : ['<plug>(wiki-graph-out)'                              , 'wiki-graph-out'],
-      \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'wiki-link-toggle'],
-      \ 'd' : ['<plug>(wiki-page-delete)'                              , 'wiki-page-delete'],
-      \ 'r' : ['<plug>(wiki-page-rename)'                              , 'wiki-page-rename'],
-      \ 't' : ['<plug>(wiki-page-toc)'                              , 'wiki-page-toc'],
-      \ 'T' : ['<plug>(wiki-page-toc-local)'                              , 'wiki-page-toc-local'],
-      \ 'e' : ['<plug>(wiki-export)'                              , 'wiki-export'],
-      \ 'u' : ['<plug>(wiki-list-uniq)'                              , 'wiki-list-uniq'],
-      \ 'U' : ['<plug>(wiki-list-uniq-local)'                              , 'wiki-list-uniq-local'],
-      \ 'h' : [':Vimwiki2HTML'                                          , 'wiki to html'],
-      \ 'V' : [':VimwikiAll2HTML'                                       , 'all wiki to html'],
-      \ 'H' : [':help vimwiki-commands'                                 , 'help']
-      \ }
-
+" let g:which_key_map.w = {
+      " \ 'name' : '+wiki' ,
+      " \ 'w' : ['<Plug>VimwikiIndex'                              , 'Open default wiki index file.'],
+      " \ 'n' : ['<plug>(wiki-open)'                              , 'wiki-open'],
+      " \ 'j' : ['<plug>(wiki-journal)'                              , 'wiki-journal'],
+      " \ 'R' : ['<plug>(wiki-reload)'                              , 'wiki-reload'],
+      " \ 'c' : ['<plug>(wiki-code-run)'                              , 'wiki-code-run'],
+      " \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                  , 'wiki-graph-find-backlinks'],
+      " \ 'g' : ['<plug>(wiki-graph-in)'                              , 'wiki-graph-in'],
+      " \ 'G' : ['<plug>(wiki-graph-out)'                              , 'wiki-graph-out'],
+      " \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'wiki-link-toggle'],
+      " \ 'd' : ['<plug>(wiki-page-delete)'                              , 'wiki-page-delete'],
+      " \ 'r' : ['<plug>(wiki-page-rename)'                              , 'wiki-page-rename'],
+      " \ 't' : ['<plug>(wiki-page-toc)'                              , 'wiki-page-toc'],
+      " \ 'T' : ['<plug>(wiki-page-toc-local)'                              , 'wiki-page-toc-local'],
+      " \ 'e' : ['<plug>(wiki-export)'                              , 'wiki-export'],
+      " \ 'u' : ['<plug>(wiki-list-uniq)'                              , 'wiki-list-uniq'],
+      " \ 'U' : ['<plug>(wiki-list-uniq-local)'                              , 'wiki-list-uniq-local'],
+      " \ 'h' : [':Vimwiki2HTML'                                          , 'wiki to html'],
+      " \ 'V' : [':VimwikiAll2HTML'                                       , 'all wiki to html'],
+      " \ 'H' : [':help vimwiki-commands'                                 , 'help']
+      " \ }
+"
 
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")

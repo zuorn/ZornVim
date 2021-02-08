@@ -60,7 +60,7 @@ source $HOME/.config/nvim/plug-config/markdown.vim
 
 " TODO
 " source $HOME/.config/nvim/snips/md-snippets.vim
-" source $HOME/.config/nvim/plug-config/wiki.vim
+source $HOME/.config/nvim/plug-config/wiki.vim
 " source $HOME/.config/nvim/plug-config/better-whitespacevim.vim
 " source $HOME/.config/nvim/plug-config/barbar.vim
 " source $HOME/.config/nvim/plug-config/codi.vim

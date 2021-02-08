@@ -38,6 +38,8 @@ set incsearch
 set guifont=JetBrainsMono\ Nerd\ Font
 set termguicolors                       " vim-deus 推荐的
 set nocompatible                        " ployglot 推荐的
+filetype plugin on 
+
 
 " 光标停留在上次关闭的位置
 if has("autocmd")

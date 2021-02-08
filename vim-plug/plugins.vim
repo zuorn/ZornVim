@@ -137,7 +137,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/vim-gist'
     Plug 'mattn/webapi-vim'
     " Vim Wiki
-    " Plug 'vimwiki/vimwiki'
+    Plug 'vimwiki/vimwiki'
     " 自动格式化
     " Plugin 'Chiel92/vim-autoformat'
     " 普通模式和可视模式下按 ga+ 符号可根据符号对齐文本
