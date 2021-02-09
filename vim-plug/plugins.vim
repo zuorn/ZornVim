@@ -116,6 +116,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'nvim-treesitter/playground'
 
+    " 中文输入法
+    " Plug 'lyokha/vim-xkbswitch'
+    " 启用
+    " let g:XkbSwitchEnabled = 1
+
 
     " Snippets
     " Plug 'honza/vim-snippets'

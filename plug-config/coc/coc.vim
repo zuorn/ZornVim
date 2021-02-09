@@ -110,55 +110,11 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " provide custom statusline: lightline.vim, vim-airline.
 " set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-" Mappings using CoCList:
-" Show all diagnostics.
-" TODO add these to which key
-" nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
-" " Manage extensions.
-" nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
-" " Show commands.
-" nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
-" " Find symbol of current document.
-" nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
-" " Search workspace symbols.
-" nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
-" " Do default action for next item.
-" nnoremap <silent> <space>j  :<C-u>CocNext<CR>
-" " Do default action for previous item.
-" nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
-" " Resume latest coc list.
-" nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-
-"" Explorer
-"let g:coc_explorer_global_presets = {
-"\   'floating': {
-"\      'position': 'floating',
-"\   },
-"\   'floatingLeftside': {
-"\      'position': 'floating',
-"\      'floating-position': 'left-center',
-"\      'floating-width': 30,
-"\   },
-"\   'floatingRightside': {
-"\      'position': 'floating',
-"\      'floating-position': 'right-center',
-"\      'floating-width': 30,
-"\   },
-"\   'simplify': {
-"\     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-"\   }
-"\ }
 
 
 
+" ==================================== Explorer ======================================= 
 
-""nmap <silent> <space>e :CocCommand explorer<CR>
-"" nnoremap <silent> <leader>e :CocCommand explorer<CR>
-"" nmap <space>f :CocCommand explorer --preset floatingRightside<CR>
-"autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-
-
-" Explorer
 let g:coc_explorer_global_presets = {
 \   '.vim': {
 \     'root-uri': '~/.vim',
@@ -198,7 +154,10 @@ let g:coc_explorer_global_presets = {
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
 
-" Snippets
+
+
+" ==================================== Snippets ======================================= 
+
 " Use <C-l> for trigger snippet expand.
 imap <C-l> <Plug>(coc-snippets-expand)
 
