@@ -207,7 +207,16 @@ let g:which_key_map.d = {
       \ 's' : ['<Plug>VimspectorStop'                          , 'stop'],
       \ }
 
-" f is for find and replace
+" f is for Telescope
+" let g:which_key_map.f = {
+      " \ 'name' : '+Telescope' ,
+      " \ 'f' : [':Telescope find_files<cr>'    , 'file'],
+      " \ 'g' : [':Telescope live_grep<cr>'     , 'grep'],
+      " \ 'b' : [':Telescope buffers<cr>'     , 'buffers'],
+      " \ 'h' : [':Telescope help_tags<cr>'     , 'tags'],
+      " \ }
+
+" z is for find and replace
 let g:which_key_map.z = {
       \ 'name' : '+find & replace' ,
       \ 'f' : [':Farr --source=vimgrep'    , 'file'],

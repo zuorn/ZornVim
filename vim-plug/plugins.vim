@@ -99,6 +99,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/gv.vim'
     Plug 'rhysd/git-messenger.vim'
 
+    " Easily Create Gists
+    Plug 'mattn/vim-gist'
+    Plug 'mattn/webapi-vim'
+
+
     " Terminal
     Plug 'voldikss/vim-floaterm'
 
@@ -116,10 +121,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'nvim-treesitter/playground'
 
-    " 中文输入法
-    " Plug 'lyokha/vim-xkbswitch'
-    " 启用
-    " let g:XkbSwitchEnabled = 1
+
+     " Closetags
+    Plug 'alvan/vim-closetag'
+
+
 
 
     " Snippets
@@ -130,19 +136,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'glts/vim-radical'
     " 文字导航
     Plug 'unblevable/quick-scope'
-     " Closetags
-    Plug 'alvan/vim-closetag'
      " Better tabline
     Plug 'romgrk/barbar.nvim'
       " Auto change html tags
     Plug 'AndrewRadev/tagalong.vim'
      " live server
     Plug 'turbio/bracey.vim'
-    " Easily Create Gists
-    Plug 'mattn/vim-gist'
-    Plug 'mattn/webapi-vim'
     " Vim Wiki
-    Plug 'vimwiki/vimwiki'
+    " Plug 'vimwiki/vimwiki'
     " 自动格式化
     " Plugin 'Chiel92/vim-autoformat'
     " 普通模式和可视模式下按 ga+ 符号可根据符号对齐文本
@@ -155,6 +156,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'justinmk/vim-sneak'
 
 
+    " telescope
+    " Gaze deeply into unknown regions using the power of the moon.
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+
+
+    " 中文输入法
+    " Plug 'lyokha/vim-xkbswitch'
+    " 启用
+    " let g:XkbSwitchEnabled = 1
 
 
     " --------------------------------------- 弃用 -------------------------------
