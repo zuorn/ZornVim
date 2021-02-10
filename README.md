@@ -61,4 +61,3 @@ git clone https://github.com/zuorn/ZornVim ~/.config/nvim
 - `jk`
 - `kj`
 - `C-c`
-
