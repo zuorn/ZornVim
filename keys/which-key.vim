@@ -11,7 +11,7 @@
 let @s = 'veS"'
 
 " Timeout
-" let g:which_key_timeout = 500
+" let g:which_key_timeout =400
 
 let g:which_key_display_names = {'<CR>': '↵', '<TAB>': '⇆'}
 
@@ -32,7 +32,7 @@ let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
 " By default timeoutlen is 1000 ms
-set timeoutlen=400
+set timeoutlen=500
 
 
 " Coc Search & refactor
@@ -55,23 +55,23 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map[';'] = [ '<plug>NERDCommenterInvert'                                 , 'Comment' ]
-let g:which_key_map['.'] = [ ':e $MYVIMRC'                                     , 'open init' ]
-let g:which_key_map['/'] = [ ':Commands'                                       , 'commands' ]
-let g:which_key_map['v'] = [ '<Plug>(coc-translator-pv)'                             , 'popup' ]
-let g:which_key_map['='] = [ '<C-W>='                                          , 'balance windows' ]
-let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+'   , 'explorer' ]
-let g:which_key_map['h'] = [ '<C-W>s'                                          , 'split below']
-let g:which_key_map['n'] = [ ':let @/ = ""'                                    , 'no highlight' ]
-let g:which_key_map['o'] = [ ':RnvimrToggle'                                   , 'RnvimrToggle' ]
-let g:which_key_map['p'] = [ ':Files'                                          , 'search files' ]
-let g:which_key_map['q'] = [ ':q'                                                   , 'quit' ]
-let g:which_key_map['Q'] = [ '<Plug>(coc-fix-current)'                         , 'quickfix' ]
-let g:which_key_map['u'] = [ ':UndotreeToggle'                                 , 'undo tree']
-let g:which_key_map['|'] = [ '<C-W>v'                                          , 'split right']
-let g:which_key_map['\'] = [ ':TSPlaygroundToggle'                            , 'tree toggle']
-let g:which_key_map['0'] = [ 'Goyo'                                            , 'zen' ]
-let g:which_key_map[' '] = [ '<esc>'                                            , 'ESC' ]
+let g:which_key_map[';'] = [ '<plug>NERDCommenterInvert',                     'Comment' ]
+let g:which_key_map['.'] = [ ':e $MYVIMRC',                                   'open init' ]
+let g:which_key_map['/'] = [ ':Commands',                                     'commands' ]
+let g:which_key_map['v'] = [ '<Plug>(coc-translator-pv)',                     'popup' ]
+let g:which_key_map['='] = [ '<C-W>=',                                        'balance windows' ]
+let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+', 'explorer' ]
+let g:which_key_map['h'] = [ '<C-W>s',                                        'split below']
+let g:which_key_map['n'] = [ ':let @/ = ""',                                  'no highlight' ]
+let g:which_key_map['o'] = [ ':RnvimrToggle',                                 'RnvimrToggle' ]
+let g:which_key_map['p'] = [ ':Files',                                        'search files' ]
+let g:which_key_map['q'] = [ ':q',                                            'quit' ]
+let g:which_key_map['Q'] = [ '<Plug>(coc-fix-current)',                       'quickfix' ]
+let g:which_key_map['u'] = [ ':UndotreeToggle',                               'undo tree']
+let g:which_key_map['|'] = [ '<C-W>v',                                        'split right']
+let g:which_key_map['T'] = [ ':TSPlaygroundToggle',                           'tree toggle']
+let g:which_key_map['0'] = [ 'Goyo',                                          'zen' ]
+let g:which_key_map[' '] = [ '<esc>',                                         'ESC' ]
 
 
 
@@ -79,11 +79,11 @@ let g:which_key_map[' '] = [ '<esc>'                                            
 
 " 1 is translator
 let g:which_key_map.1 = {
-                  \ 'name' : '+translator' ,
-                  \ '1' : ['<Plug>(coc-translator-pv)' ,'popup'],
-                  \ '2' : ['<Plug>(coc-translator-ev)' ,'echo'],
-                  \ '3' : ['<Plug>(coc-translator-rv)' ,'replace'],
-                  \ '4' : [':CocList translation' ,'translation list'],
+                  \ 'name' : '+translator',
+                  \ '1' : ['<Plug>(coc-translator-pv)', 'popup'],
+                  \ '2' : ['<Plug>(coc-translator-ev)', 'echo'],
+                  \ '3' : ['<Plug>(coc-translator-rv)', 'replace'],
+                  \ '4' : [':CocList translation',      'translation list'],
                   \}
 
 
@@ -102,23 +102,23 @@ let g:which_key_map.1 = {
 
 " a is for actions
 let g:which_key_map.a = {
-                  \ 'name' : '+actions' ,
-                  \ 'c' : [':ColorizerToggle'        , 'colorizer'],
-                  \ 'e' : [':CocCommand explorer'    , 'explorer'],
-                  \ 'h' : [':let @/ = ""'            , 'remove search highlight'],
-                  \ 'l' : [':Bracey'                 , 'start live server'],
-                  \ 'L' : [':BraceyStop'             , 'stop live server'],
-                  \ 't' : [':GenTocGFM'              , 'markdown toc'],
-                  \ 'm' : [':MarkdownPreview'        , 'markdown preview'],
-                  \ 'M' : [':MarkdownPreviewStop'    , 'markdown preview stop'],
-                  \ 'o' : [':CocCommand markmap.create' , 'markmap'],
-                  \ 'j' : ['<Plug>(coc-codeaction)' , 'Autofix'],
-                  \ 's' : [':s/\%V\(.*\)\%V/"\1"/'   , 'surround'],
-                  \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
-                  \ '-' : [':FloatermToggle'         , 'terminal'],
-                  \ 'v' : [':Codi'                   , 'virtual repl on'],
-                  \ 'V' : [':Codi!'                  , 'virtual repl off'],
-                  \ 'w' : [':StripWhitespace'        , 'strip whitespace'],
+                  \ 'name' : '+actions',
+                  \ 'c' : [':ColorizerToggle',           'colorizer'],
+                  \ 'e' : [':CocCommand explorer',       'explorer'],
+                  \ 'h' : [':let @/ = ""',               'remove search highlight'],
+                  \ 'l' : [':Bracey',                    'start live server'],
+                  \ 'L' : [':BraceyStop',                'stop live server'],
+                  \ 't' : [':GenTocGFM',                 'markdown toc'],
+                  \ 'm' : [':MarkdownPreview',           'markdown preview'],
+                  \ 'M' : [':MarkdownPreviewStop',       'markdown preview stop'],
+                  \ 'o' : [':CocCommand markmap.create', 'markmap'],
+                  \ 'j' : ['<Plug>(coc-codeaction)',     'Autofix'],
+                  \ 's' : [':s/\%V\(.*\)\%V/"\1"/',      'surround'],
+                  \ 'r' : [':set norelativenumber!',     'relative line nums'],
+                  \ '-' : [':FloatermToggle',            'terminal'],
+                  \ 'v' : [':Codi',                      'virtual repl on'],
+                  \ 'V' : [':Codi!',                     'virtual repl off'],
+                  \ 'w' : [':StripWhitespace',           'strip whitespace'],
                   \ }
 
 
@@ -153,20 +153,20 @@ let g:which_key_map.b = {
 
 " c is for Comment
 let g:which_key_map.c = {
-                  \ 'name' : '+Comment' ,
-                  \ 'c' : ['<plug>NERDCommenterComment', 'CommenterComment'],
-                  \ 'n' : ['<plug>NERDCommenterNested'                  ,'CommenterNested'],
-                  \ '<space>':['<plug>NERDCommenterToggle',             'CommenterToggle'],
-                  \ 'm':['<plug>NERDCommenterMinimal',                  'CommenterMinimal'],
-                  \ 'i':['<plug>NERDCommenterInvert',                   'CommenterInvert'],
-                  \ 's':['<plug>NERDCommenterSexy',                           'CommenterSexy'],
-                  \ 'y':['<plug>NERDCommenterYank',                           'CommenterYank'],
-                  \ '$':['<plug>NERDCommenterToEOL',                          'CommenterToEOL'],
-                  \ 'A':['<plug>NERDCommenterAppend',                         'CommenterAppend'],
-                  \ 'a':['<plug>NERDCommenterAltDelims',                      'CommenterAltDelims'],
-                  \ 'l':['<plug>NERDCommenterAlignLeft',                      'CommenterAlignLeft'],
-                  \ 'b':['<plug>NERDCommenterAlignBoth',                      'CommenterAlignBoth'],
-                  \ 'u':['<plug>NERDCommenterUncomment',                      'CommenterUncomment'],
+                  \ 'name' : '+Comment',
+                  \ 'c' : ['<plug>NERDCommenterComment',    'CommenterComment'],
+                  \ 'n' : ['<plug>NERDCommenterNested',     'CommenterNested'],
+                  \ '<space>':['<plug>NERDCommenterToggle', 'CommenterToggle'],
+                  \ 'm':['<plug>NERDCommenterMinimal',      'CommenterMinimal'],
+                  \ 'i':['<plug>NERDCommenterInvert',       'CommenterInvert'],
+                  \ 's':['<plug>NERDCommenterSexy',         'CommenterSexy'],
+                  \ 'y':['<plug>NERDCommenterYank',         'CommenterYank'],
+                  \ '$':['<plug>NERDCommenterToEOL',        'CommenterToEOL'],
+                  \ 'A':['<plug>NERDCommenterAppend',       'CommenterAppend'],
+                  \ 'a':['<plug>NERDCommenterAltDelims',    'CommenterAltDelims'],
+                  \ 'l':['<plug>NERDCommenterAlignLeft',    'CommenterAlignLeft'],
+                  \ 'b':['<plug>NERDCommenterAlignBoth',    'CommenterAlignBoth'],
+                  \ 'u':['<plug>NERDCommenterUncomment',    'CommenterUncomment'],
                   \}
 
 " d is for debug
@@ -222,12 +222,12 @@ let g:which_key_map.k = {
 
 " m is for mark
 let g:which_key_map.m = {
-                  \ 'name' : '+mark' ,
+                  \ 'name' : '+mark',
                   \ 'c' : [':CocCommand bookmark.clearForCurrentFile', 'clear file'],
-                  \ 'C' : [':CocCommand bookmark.clearForAllFiles', 'clear project'],
-                  \ 'j' : [':CocCommand bookmark.next', 'next bookmark'],
-                  \ 'k' : [':CocCommand bookmark.prev', 'prev bookmark'],
-                  \ 't' : [':CocCommand bookmark.toggle', 'toggle bookmark'],
+                  \ 'C' : [':CocCommand bookmark.clearForAllFiles',    'clear project'],
+                  \ 'j' : [':CocCommand bookmark.next',                'next bookmark'],
+                  \ 'k' : [':CocCommand bookmark.prev',                'prev bookmark'],
+                  \ 't' : [':CocCommand bookmark.toggle',              'toggle bookmark'],
                   \ }
 " CoC throws an error
 " \ 'a' : [':CocCommand bookmark.annotate', 'annotate bookmark'],
@@ -235,33 +235,33 @@ let g:which_key_map.m = {
 
 " s is for search
 let g:which_key_map.s = {
-                  \ 'name' : '+search' ,
-                  \ '/' : [':History/'              , 'history'],
-                  \ ';' : [':FzfPreviewCommandPalette'              , 'commands'],
-                  \ 'a' : [':Ag'                    , 'text Ag'],
-                  \ 'b' : [':CocCommand fzf-preview.BufferLines'                , 'current buffer'],
-                  \ 'B' : [':CocCommand fzf-preview.Buffers'               , 'open buffers'],
-                  \ 'c' : [':Commits'               , 'commits'],
-                  \ 'C' : [':BCommits'              , 'buffer commits'],
-                  \ 'd' : [':CocCommand fzf-preview.DirectoryFiles'              , 'directories'],
-                  \ 'f' : [':CocCommand fzf-preview.ProjectFiles'                 , 'files'],
-                  \ 'g' : [':CocCommand fzf-preview.GitFiles'                , 'git files'],
-                  \ 'G' : [':GFiles?'               , 'modified git files'],
-                  \ 'h' : [':History'               , 'file history'],
-                  \ 'H' : [':History:'              , 'command history'],
-                  \ 'l' : [':Lines'                 , 'lines'] ,
-                  \ 'm' : [':CocCommand fzf-preview.Marks', 'list marks'],
-                  \ 'M' : [':Maps'                  , 'normal maps'] ,
-                  \ 'p' : [':Helptags'              , 'help tags'] ,
-                  \ 'P' : [':Tags'                  , 'project tags'],
-                  \ 'q' : [':CocCommand fzf-preview.QuickFix'                  , 'quickfix list'],
-                  \ 's' : [':CocList snippets'      , 'snippets'],
-                  \ 'S' : [':Colors'                , 'color schemes'],
-                  \ 't' : [':Rg'                    , 'text Rg'],
-                  \ 'T' : [':BTags'                 , 'buffer tags'],
-                  \ 'w' : [':Windows'               , 'search windows'],
-                  \ 'y' : [':Filetypes'             , 'file types'],
-                  \ 'z' : [':FZF'                   , 'FZF'],
+                  \ 'name' : '+search',
+                  \ '/' : [':History/',                              'history'],
+                  \ ';' : [':FzfPreviewCommandPalette',              'commands'],
+                  \ 'a' : [':Ag',                                    'text Ag'],
+                  \ 'b' : [':CocCommand fzf-preview.BufferLines',    'current buffer'],
+                  \ 'B' : [':CocCommand fzf-preview.Buffers',        'open buffers'],
+                  \ 'c' : [':Commits',                               'commits'],
+                  \ 'C' : [':BCommits',                              'buffer commits'],
+                  \ 'd' : [':CocCommand fzf-preview.DirectoryFiles', 'directories'],
+                  \ 'f' : [':CocCommand fzf-preview.ProjectFiles',   'files'],
+                  \ 'g' : [':CocCommand fzf-preview.GitFiles',       'git files'],
+                  \ 'G' : [':GFiles?',                               'modified git files'],
+                  \ 'h' : [':History',                               'file history'],
+                  \ 'H' : [':History:',                              'command history'],
+                  \ 'l' : [':Lines',                                 'lines'] ,
+                  \ 'm' : [':CocCommand fzf-preview.Marks',          'list marks'],
+                  \ 'M' : [':Maps',                                  'normal maps'] ,
+                  \ 'p' : [':Helptags',                              'help tags'] ,
+                  \ 'P' : [':Tags',                                  'project tags'],
+                  \ 'q' : [':CocCommand fzf-preview.QuickFix',       'quickfix list'],
+                  \ 's' : [':CocList snippets',                      'snippets'],
+                  \ 'S' : [':Colors',                                'color schemes'],
+                  \ 't' : [':Rg',                                    'text Rg'],
+                  \ 'T' : [':BTags',                                 'buffer tags'],
+                  \ 'w' : [':Windows',                               'search windows'],
+                  \ 'y' : [':Filetypes',                             'file types'],
+                  \ 'z' : [':FZF',                                   'FZF'],
                   \ }
 "
 " :CocCommand fzf-preview.AllBuffers
@@ -386,30 +386,30 @@ let g:which_key_map.t = {
                   \ }
 
 " w is for wiki
-" let g:which_key_map.w = {
-" \ 'name' : '+wiki' ,
-" \ 'w' : ['<Plug>VimwikiIndex'                              , 'Open default wiki index file.'],
-" \ 'n' : ['<plug>(wiki-open)'                              , 'wiki-open'],
-" \ 'j' : ['<plug>(wiki-journal)'                              , 'wiki-journal'],
-" \ 'R' : ['<plug>(wiki-reload)'                              , 'wiki-reload'],
-" \ 'c' : ['<plug>(wiki-code-run)'                              , 'wiki-code-run'],
-" \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                  , 'wiki-graph-find-backlinks'],
-" \ 'g' : ['<plug>(wiki-graph-in)'                              , 'wiki-graph-in'],
-" \ 'G' : ['<plug>(wiki-graph-out)'                              , 'wiki-graph-out'],
-" \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'wiki-link-toggle'],
-" \ 'd' : ['<plug>(wiki-page-delete)'                              , 'wiki-page-delete'],
-" \ 'r' : ['<plug>(wiki-page-rename)'                              , 'wiki-page-rename'],
-" \ 't' : ['<plug>(wiki-page-toc)'                              , 'wiki-page-toc'],
-" \ 'T' : ['<plug>(wiki-page-toc-local)'                              , 'wiki-page-toc-local'],
-" \ 'e' : ['<plug>(wiki-export)'                              , 'wiki-export'],
-" \ 'u' : ['<plug>(wiki-list-uniq)'                              , 'wiki-list-uniq'],
-" \ 'U' : ['<plug>(wiki-list-uniq-local)'                              , 'wiki-list-uniq-local'],
-" \ 'h' : [':Vimwiki2HTML'                                          , 'wiki to html'],
-" \ 'V' : [':VimwikiAll2HTML'                                       , 'all wiki to html'],
-" \ 'H' : [':help vimwiki-commands'                                 , 'help']
-" \ }
-"
+let g:which_key_map.w = {
+                  \ 'name' : '+wiki',
+                  \ 'w' : ['<Plug>VimwikiIndex',                'Open default wiki index file.'],
+                  \ 'n' : ['<plug>(wiki-open)',                 'wiki-open'],
+                  \ 'j' : ['<plug>(wiki-journal)',              'wiki-journal'],
+                  \ 'R' : ['<plug>(wiki-reload)',               'wiki-reload'],
+                  \ 'c' : ['<plug>(wiki-code-run)',             'wiki-code-run'],
+                  \ 'b' : ['<plug>(wiki-graph-find-backlinks)', 'wiki-graph-find-backlinks'],
+                  \ 'g' : ['<plug>(wiki-graph-in)',             'wiki-graph-in'],
+                  \ 'G' : ['<plug>(wiki-graph-out)',            'wiki-graph-out'],
+                  \ 'l' : ['<plug>(wiki-link-toggle)',          'wiki-link-toggle'],
+                  \ 'd' : ['<plug>(wiki-page-delete)',          'wiki-page-delete'],
+                  \ 'r' : ['<plug>(wiki-page-rename)',          'wiki-page-rename'],
+                  \ 't' : ['<plug>(wiki-page-toc)',             'wiki-page-toc'],
+                  \ 'T' : ['<plug>(wiki-page-toc-local)',       'wiki-page-toc-local'],
+                  \ 'e' : ['<plug>(wiki-export)',               'wiki-export'],
+                  \ 'u' : ['<plug>(wiki-list-uniq)',            'wiki-list-uniq'],
+                  \ 'U' : ['<plug>(wiki-list-uniq-local)',      'wiki-list-uniq-local'],
+                  \ 'h' : [':Vimwiki2HTML',                     'wiki to html'],
+                  \ 'V' : [':VimwikiAll2HTML',                  'all wiki to html'],
+                  \ 'H' : [':help vimwiki-commands',            'help']
+                  \ }
 
+"
 " Mappings using CoCList:
 " Show all diagnostics.
 " TODO add these to which key

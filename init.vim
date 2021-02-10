@@ -43,7 +43,8 @@ source $HOME/.config/nvim/plug-config/tabular.vim
 source $HOME/.config/nvim/plug-config/tagalong.vim
 source $HOME/.config/nvim/plug-config/closetags.vim
 source $HOME/.config/nvim/plug-config/easy-align.vim
-source $HOME/.config/nvim/plug-config/aoduformat.vim
+source $HOME/.config/nvim/plug-config/easymotion.vim
+source $HOME/.config/nvim/plug-config/autoformat.vim
 source $HOME/.config/nvim/plug-config/barbar.vim
 " git integration
 source $HOME/.config/nvim/plug-config/git-messenger.vim
@@ -55,7 +56,7 @@ source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 luafile $HOME/.config/nvim/lua/ZornVimline.lua
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " core
-source $HOME/.config/nvim/core/skippair.vim
+" source $HOME/.config/nvim/core/skippair.vim
 " MarkDown
 source $HOME/.config/nvim/snips/md.vim
 source $HOME/.config/nvim/plug-config/markdown.vim
@@ -66,7 +67,7 @@ source $HOME/.config/nvim/plug-config/markdown.vim
 source $HOME/.config/nvim/plug-config/wiki.vim
 " source $HOME/.config/nvim/plug-config/better-whitespacevim.vim
 " source $HOME/.config/nvim/plug-config/codi.vim
-" source $HOME/.config/nvim/plug-config/vista.vim
+source $HOME/.config/nvim/plug-config/vista.vim
 
 " abandon
 " source $HOME/.config/nvim/plug-config/airline.vim

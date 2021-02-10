@@ -28,58 +28,47 @@ Plug 'kevinhwang91/rnvimr'
 Plug 'moll/vim-bbye'
 " 自动缩进
 Plug 'tpope/vim-sleuth'
-" 添加代码缩进
+" 添加代码缩进线
 Plug 'yggdroot/indentline'
 " 自动补全双括号等
 Plug 'jiangmiao/auto-pairs'
-
 " lua 状态栏
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-
 " 图标
 Plug 'kyazdani42/nvim-web-devicons' " lua
 Plug 'ryanoasis/vim-devicons' " vimscript
 " 更好的顶栏
 Plug 'mg979/vim-xtabline'
-" barbar.nvim是一个tabline插件，具有可重新排序的自动调整大小的可单击选项卡，图标，漂亮的突出显示，排序命令和魔术跳转到缓冲区模式。另外，当两个文件名匹配时，选项卡名称将变得唯一。
+" 更好的 buffers 跳转
 Plug 'romgrk/barbar.nvim'
-
 " Colorizer 颜色代码显示颜色
 Plug 'norcalli/nvim-colorizer.lua'
-
 " vim 语言包
 Plug 'sheerun/vim-polyglot'
-
 " 快速跳转
 Plug 'easymotion/vim-easymotion'
-
 " FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
 Plug 'junegunn/fzf.vim'
-
 " 查找与替换
 Plug 'brooth/far.vim'
-
 " Zen 模式
 Plug 'junegunn/goyo.vim'
-
 " accelerated-jk 使光标在jk移动时速度随时间的增加而增加
 Plug 'rhysd/accelerated-jk'
-
 " 自动保存
 Plug 'vim-scripts/vim-auto-save'
-
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" 普通模式和可视模式下按 ga+ 符号 gaip+ 符号可根据符号对齐文本
+Plug 'junegunn/vim-easy-align'
+
+" Markdown
 " 对齐
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-
-
-" Markdown
-
 "  实时预览
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
@@ -90,10 +79,8 @@ Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] 
 " Bullets.vim是一个用于自动项目符号列表的Vim插件。
 Plug 'dkarter/bullets.vim'
 
-
 " 撤销历史
 Plug 'mbbill/undotree'
-
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -105,7 +92,6 @@ Plug 'rhysd/git-messenger.vim'
 " Easily Create Gists
 Plug 'mattn/vim-gist'
 Plug 'mattn/webapi-vim'
-
 
 " Terminal
 Plug 'voldikss/vim-floaterm'
@@ -121,26 +107,15 @@ Plug 'tpope/vim-surround'
 " Have the file system follow you around
 Plug 'airblade/vim-rooter'
 
-" Treesitter 主题
+" Treesitter
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'christianchiarulli/nvcode-color-schemes.vim'
 " 查看树信息
 Plug 'nvim-treesitter/playground'
 
-
 " Closetags
 Plug 'alvan/vim-closetag'
 
-
-
-
-" Snippets
-" Plug 'honza/vim-snippets'
-
-" --------------------------------------- TODO ----------------------------------
-" 进制转换
-" Plug 'glts/vim-radical'
-" 文字导航
 " 这个插件应该可以帮助您使用Vim的内置功能f<char>（两次将光标移至 <char>）进行两次或三次击键来排成一行。
 Plug 'unblevable/quick-scope'
 " Better tabline
@@ -150,27 +125,32 @@ Plug 'AndrewRadev/tagalong.vim'
 " 命令：Bracey
 Plug 'turbio/bracey.vim'
 " Vim Wiki
-" Plug 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki'
 " 自动格式化
 Plug 'Chiel92/vim-autoformat'
-" 普通模式和可视模式下按 ga+ 符号可根据符号对齐文本
-" Plug 'junegunn/vim-easy-align'
-
-" 格式化代码
-" Plug 'liuchengxu/vista.vim'
 
 " Sneak
 Plug 'justinmk/vim-sneak'
 
+" --------------------------------------- TODO ----------------------------------
+
+" 格式化代码
+Plug 'liuchengxu/vista.vim'
+
+" Snippets
+" Plug 'honza/vim-snippets'
+
+" 进制转换
+" Plug 'glts/vim-radical'
 
 " telescope
 " Gaze deeply into unknown regions using the power of the moon.
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+" Plug 'nvim-lua/popup.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'nvim-telescope/telescope.nvim'
+"
 
-
-" 中文输入法
+" 中文输入法 不是很好用
 " Plug 'lyokha/vim-xkbswitch'
 " 启用
 " let g:XkbSwitchEnabled = 1
