@@ -70,7 +70,7 @@ source $HOME/.config/nvim/plug-config/wiki.vim
 source $HOME/.config/nvim/plug-config/vista.vim
 
 " vscode
-source $HOME/.config/nvim/general/vscode-settings.vim
+" source $HOME/.config/nvim/general/vscode-settings.vim
 
 " abandon
 " source $HOME/.config/nvim/plug-config/airline.vim
