@@ -134,7 +134,6 @@ Plug 'justinmk/vim-sneak'
 
 " --------------------------------------- TODO ----------------------------------
 
-" 格式化代码
 Plug 'liuchengxu/vista.vim'
 
 " Snippets
