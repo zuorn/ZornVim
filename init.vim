@@ -52,7 +52,7 @@ source $HOME/.config/nvim/plug-config/gitgutter.vim
 source $HOME/.config/nvim/plug-config/coc/coc.vim
 source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 " lua
-luafile $HOME/.config/nvim/lua/ZornVimline.lua
+luafile $HOME/.config/nvim/lua/line.lua
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " core
 " source $HOME/.config/nvim/core/skippair.vim
