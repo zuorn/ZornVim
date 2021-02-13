@@ -77,7 +77,7 @@
 
 
 
-    " 键位：
+    " 默认键位：
     " gx: 在浏览器里打开链接
     " ge: open the link under the cursor in Vim for editing. Useful for relative markdown links. <Plug>Markdown_EditUrlUnderCursor
     " ]]: 下一个标题 <Plug>Markdown_MoveToNextHeader
