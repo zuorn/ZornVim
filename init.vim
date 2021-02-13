@@ -36,7 +36,6 @@ source $HOME/.config/nvim/plug-config/goyo.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
-source $HOME/.config/nvim/plug-config/galaxyline.vim
 source $HOME/.config/nvim/plug-config/accelerated-jk.vim
 source $HOME/.config/nvim/plug-config/vim-auto-save.vim
 source $HOME/.config/nvim/plug-config/tabular.vim
