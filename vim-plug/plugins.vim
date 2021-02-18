@@ -32,6 +32,8 @@ Plug 'tpope/vim-sleuth'
 Plug 'yggdroot/indentline'
 " 自动补全双括号等
 Plug 'jiangmiao/auto-pairs'
+" 彩色括号
+Plug 'luochen1990/rainbow'
 " lua 状态栏
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 " 图标
@@ -133,6 +135,9 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'justinmk/vim-sneak'
 
 " --------------------------------------- TODO ----------------------------------
+
+" Plug 'pechorin/any-jump.vim'
+
 
 Plug 'liuchengxu/vista.vim'
 
