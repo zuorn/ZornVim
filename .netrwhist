@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/zuorn/.config/kitty'
+let g:netrw_dirhist_2='/Users/zuorn/.config/nvim/pack'
+let g:netrw_dirhist_1='/Users/zuorn/.config/nvim/pack/kite'
+let g:netrw_dirhist_0='/Users/zuorn/.config/kitty'
 let g:netrw_dirhist_9='/Users/zuorn/PycharmProjects/django_blog/django_blog'
 let g:netrw_dirhist_8='/Users/zuorn/PycharmProjects/django_blog'
 let g:netrw_dirhist_7='/Users/zuorn/.hammerspoon'
 let g:netrw_dirhist_6='/Users/zuorn/.config/spacevim'
 let g:netrw_dirhist_5='/Users/zuorn/.hammerspoon'
 let g:netrw_dirhist_4='/Users/zuorn/vimwiki'
-let g:netrw_dirhist_3='/Users/zuorn/vimer/tnvim'
-let g:netrw_dirhist_2='/Users/zuorn/vimer'
-let g:netrw_dirhist_1='/Users/zuorn/.config/nvim'
-let g:netrw_dirhist_0='/Users/zuorn/.config/nvim/.gradle'
