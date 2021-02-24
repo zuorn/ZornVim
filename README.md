@@ -62,4 +62,4 @@ git clone https://github.com/zuorn/ZornVim ~/.config/nvim
 - `kj`
 - `C-c`
 
-
+### 写累了，改天再也。。。  
