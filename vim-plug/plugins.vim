@@ -134,7 +134,11 @@ Plug 'Chiel92/vim-autoformat'
 " Sneak
 Plug 'justinmk/vim-sneak'
 
+
+
 " --------------------------------------- TODO ----------------------------------
+" 多光标 
+" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " Plug 'pechorin/any-jump.vim'
 

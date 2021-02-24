@@ -1,7 +1,7 @@
 set iskeyword+=-                      	" 将破折号分隔的单词视为单词文本对象 
 set formatoptions-=cro                  " 停止注释的新行继续
 set relativenumber
-syntax enable                           " 启用语法突出显示
+" syntax enable                           " 启用语法突出显示
 set hidden                              " 保持多个缓冲区打开多个缓冲区所需
 autocmd Filetype markdown set wrap
 set nowrap                                " 换行

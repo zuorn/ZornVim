@@ -44,10 +44,10 @@ vnoremap jk <Esc>
 vnoremap kj <Esc>
 
 
-inoremap <expr> <c-j> ("\<C-n>")
+" inoremap <expr> <c-j> ("\<C-n>")
 cnoremap <expr> <c-k> ("\<C-p>")
 cnoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
+" inoremap <expr> <c-k> ("\<C-p>")
 
 
 " Move selected line / block of text in visual mode
